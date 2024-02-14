@@ -1,0 +1,51 @@
+/* fonts */
+/* colors */
+/* MIXINS */
+.header {
+  grid-row: 1/2;
+  grid-column: 1/-1;
+  margin: auto 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.logoContainer {
+  width: 9.5rem;
+  margin-right: 9.5rem;
+}
+
+.navList {
+  display: flex;
+}
+.navList .navItem {
+  font-family: "League Spartan", "Verdana", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.5;
+  color: #7D828F;
+  margin-right: 6rem;
+  position: relative;
+  transition: all 0.25s ease-in;
+}
+.navList .navItem:hover {
+  color: #1B1D23;
+}
+
+.active {
+  color: #1B1D23;
+}
+.active::after {
+  content: "";
+  height: 2px;
+  width: 50%;
+  background-color: #1B1D23;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(50%, -50%);
+}
+
+/*# sourceMappingURL=Header.module.css.map */

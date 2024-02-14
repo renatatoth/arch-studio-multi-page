@@ -1,0 +1,51 @@
+@use "../../variables" as *;
+
+.header {
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+  margin: auto 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.logoContainer {
+  width: 9.5rem;
+  margin-right: 9.5rem;
+}
+
+.navList {
+  display: flex;
+
+  & .navItem {
+    font-family: $font;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.5;
+    color: $medium-grey;
+    margin-right: 6rem;
+    position: relative;
+    @include smooth-transition;
+
+    &:hover {
+      color: $very-dark-blue;
+    }
+  }
+}
+
+.active {
+  color: $very-dark-blue;
+
+  &::after {
+    content: "";
+    height: 2px;
+    width: 50%;
+    background-color: $very-dark-blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(50%, -50%);
+  }
+}

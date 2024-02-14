@@ -1,0 +1,15 @@
+/* fonts */
+$font: 'League Spartan', 'Verdana', sans-serif;
+
+/* colors */
+$very-dark-blue: #1B1D23;
+$dark-grey: #60636D;
+$medium-grey: #7D828F;
+$light-grey: #C8CCD8;
+$very-light-grey: #EEEFF4;
+$red: #DF5656;
+
+/* MIXINS */
+@mixin smooth-transition {
+  transition: all .25s ease-in;
+}
