@@ -1,0 +1,35 @@
+@use "../../variables" as *;
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 8rem;
+  width: fit-content;
+  height: 8rem;
+  background-color: $very-dark-blue;
+  color: #FFF;
+  font-size: 1.8rem;
+  @include smooth-transition;
+
+  &:hover {
+    background-color: $dark-grey;
+  }
+
+  &:active {
+    background-color: $light-grey;
+  }
+  & .icon {
+    display: inline-block;
+    filter: invert(100) brightness(100);
+  }
+}
+
+.withText {
+  padding: 2.5rem 3.3rem;
+  height: 7.2rem;
+
+  & .icon {
+    margin-left: 2.4rem;
+  }
+}

@@ -1,0 +1,31 @@
+@use "../../variables" as *;
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  height: 8rem;
+  background-color: #FFF;
+  color: $medium-grey;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+  @include smooth-transition;
+
+  &:hover {
+    background-color: $very-light-grey;
+    color: $medium-grey;
+  }
+}
+
+.active {
+  background-color: $very-dark-blue;
+  color: #FFF;
+
+  &:hover {
+    background-color: $very-dark-blue;
+    color: #FFF;
+  }
+}

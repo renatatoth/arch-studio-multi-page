@@ -1,0 +1,62 @@
+/* fonts */
+/* colors */
+/* MIXINS */
+.wrapper {
+  grid-column: 1/-1;
+  height: 72rem;
+  position: relative;
+  transition: all 0.25s ease-in;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.4;
+  z-index: 100;
+}
+
+.imgContainer {
+  overflow: hidden;
+}
+.imgContainer .image {
+  display: block;
+  width: 100%;
+}
+
+.textContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 200;
+  top: 0;
+  left: 19rem;
+  max-width: 54.4rem;
+  height: 35.5rem;
+  color: #FFF;
+  transform: translateY(50%);
+}
+.textContainer h1 {
+  font-size: 9.6rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+.textContainer p {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  width: 44rem;
+}
+
+.btnContainer {
+  display: flex;
+  position: relative;
+  top: -8rem;
+  left: -8rem;
+  z-index: 500;
+}
+
+/*# sourceMappingURL=Carousel.module.css.map */

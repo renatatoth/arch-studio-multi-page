@@ -1,0 +1,32 @@
+/* fonts */
+/* colors */
+/* MIXINS */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  height: 8rem;
+  background-color: #FFF;
+  color: #7D828F;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+}
+.btn:hover {
+  background-color: #EEEFF4;
+  color: #7D828F;
+}
+
+.active {
+  background-color: #1B1D23;
+  color: #FFF;
+}
+.active:hover {
+  background-color: #1B1D23;
+  color: #FFF;
+}
+
+/*# sourceMappingURL=CarouselButton.module.css.map */

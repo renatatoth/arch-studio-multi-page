@@ -10,9 +10,9 @@ const Header = () => {
                     <Link to="/"><img src={logo} alt="Logo"/></Link>
                 </div>
                 <ul className={classes.navList}>
-                    <li className={classes.navItem}><NavLink to="/portfolio" className={({isActive}) => isActive && `${classes.active}`}>Portfolio</NavLink></li>
-                    <li className={classes.navItem}><NavLink to="/about" className={({isActive}) => isActive && `${classes.active}`}>About Us</NavLink></li>
-                    <li className={classes.navItem}><NavLink to="/contact" className={({isActive}) => isActive && `${classes.active}`}>Contact</NavLink></li>
+                    <li className={classes.navItem}><NavLink to="/portfolio" className={({isActive}) => isActive ? `${classes.active}` : ''}>Portfolio</NavLink></li>
+                    <li className={classes.navItem}><NavLink to="/about" className={({isActive}) => isActive ? `${classes.active}` : ''}>About Us</NavLink></li>
+                    <li className={classes.navItem}><NavLink to="/contact" className={({isActive}) => isActive ? `${classes.active}` : ''}>Contact</NavLink></li>
                 </ul>
             </nav>
         </header>
