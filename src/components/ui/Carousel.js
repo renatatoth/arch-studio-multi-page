@@ -28,7 +28,7 @@ const Carousel = ({data}) => {
         <div className={classes.wrapper}>
             <div className={classes.overlay}></div>
             <div className={classes.imgContainer}>
-                <img src={data[currSlide].desktopUrl} alt={data[currSlide].title}/>
+                <img src={require(`../../assets/home/desktop/${data[currSlide].url}`)} alt={data[currSlide].title}/>
             </div>
             <div className={classes.textContainer}>
                 <div>
