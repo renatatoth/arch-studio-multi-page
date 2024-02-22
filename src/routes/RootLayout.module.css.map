@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["RootLayout.module.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA","file":"RootLayout.module.css"}
+{"version":3,"sourceRoot":"","sources":["../variables.scss","RootLayout.module.scss"],"names":[],"mappings":"AAAA;AAGA;AAQA;ACTA;EDeE;EACA;EACA;ECfA;;;AAIF;EACE;EACA;EDOA;EACA;EACA;ECPA;EACA","file":"RootLayout.module.css"}

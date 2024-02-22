@@ -1,0 +1,27 @@
+/* FONTS */
+/* COLORS */
+/* MIXINS */
+.pageTitle {
+  position: absolute;
+  top: 0;
+  left: -7.8rem;
+  transform: rotate(90deg);
+  transform-origin: top left;
+  height: 2.4rem;
+  font-size: 1.8rem;
+  color: #C8CCD8;
+  letter-spacing: 1.8rem;
+  text-transform: uppercase;
+}
+.pageTitle::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.6rem;
+  left: -15.2rem;
+  height: 1px;
+  width: 10.4rem;
+  background-color: #C8CCD8;
+}
+
+/*# sourceMappingURL=PageTitle.module.css.map */

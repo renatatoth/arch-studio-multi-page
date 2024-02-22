@@ -1,6 +1,10 @@
+import PageTitle from "../components/ui/PageTitle";
+
 const Portfolio = () => {
     return (
-        <div>Portfolio page</div>
+        <>
+            <PageTitle>Portfolio</PageTitle>
+        </>
     );
 };
 

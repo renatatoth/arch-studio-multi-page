@@ -1,8 +1,11 @@
+/* FONTS */
+/* COLORS */
+/* MIXINS */
 .wrapper {
   display: grid;
   grid-template-columns: repeat(12, 6.5rem);
-  grid-template-rows: 20rem 1fr 20rem;
   column-gap: 3rem;
+  grid-template-rows: 15.2rem 1fr 20rem;
 }
 
 .main {
@@ -10,8 +13,9 @@
   grid-column: 1/-1;
   display: grid;
   grid-template-columns: repeat(12, 6.5rem);
-  grid-template-rows: auto;
   column-gap: 3rem;
+  grid-template-rows: auto;
+  position: relative;
 }
 
 /*# sourceMappingURL=RootLayout.module.css.map */

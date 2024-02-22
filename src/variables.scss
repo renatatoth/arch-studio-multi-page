@@ -1,7 +1,7 @@
-/* fonts */
+/* FONTS */
 $font: 'League Spartan', 'Verdana', sans-serif;
 
-/* colors */
+/* COLORS */
 $very-dark-blue: #1B1D23;
 $dark-grey: #60636D;
 $medium-grey: #7D828F;
@@ -12,4 +12,10 @@ $red: #DF5656;
 /* MIXINS */
 @mixin smooth-transition {
   transition: all .25s ease-in;
+}
+
+@mixin grid-12-col {
+  display: grid;
+  grid-template-columns: repeat(12, 6.5rem);
+  column-gap: 3rem;
 }
