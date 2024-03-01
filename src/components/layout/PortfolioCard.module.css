@@ -1,0 +1,36 @@
+.card {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card .overlay {
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+.card .textWrapper {
+  color: #FFF;
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+  z-index: 20;
+}
+.card .textWrapper .projectTitle {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  font-weight: 700;
+}
+.card .textWrapper .projectDate {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  opacity: 0.85;
+}
+
+/*# sourceMappingURL=PortfolioCard.module.css.map */

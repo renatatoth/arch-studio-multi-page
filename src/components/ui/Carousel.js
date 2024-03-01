@@ -1,7 +1,7 @@
 import {useState, useEffect, useRef} from "react";
 import Button from "./Button";
-import classes from './Carousel.module.scss';
 import CarouselButton from "./CarouselButton";
+import classes from './Carousel.module.scss';
 
 const Carousel = ({data}) => {
     const [currSlide, setCurrSlide] = useState(0);
@@ -21,13 +21,13 @@ const Carousel = ({data}) => {
     }, [auto, currSlide, data]);
 
     const selectSlideHandler = (slideNum) => {
-        setCurrSlide(slideNum );
+        setCurrSlide(slideNum - 1);
     };
 
     return (
-        <div className={classes.wrapper}>
+        <section className={classes.wrapper}>
             <div className={classes.imgContainer}>
-                <img src={require(`../../assets/home/desktop/${data[currSlide].url}`)} alt={data[currSlide].title}/>
+                <img src={require(`../../assets/home/desktop/${data[currSlide].imgUrl}`)} alt={data[currSlide].title}/>
             </div>
             <div className={classes.textContainer}>
                 <div>
@@ -39,7 +39,7 @@ const Carousel = ({data}) => {
             <div className={classes.btnContainer}>
                 {data.map(e => <CarouselButton key={e.id} btnNumber={e.id} currSlide={currSlide} onSelectSlide={selectSlideHandler}/>)}
             </div>
-        </div>
+        </section>
     );
 };
 

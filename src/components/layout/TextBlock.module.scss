@@ -1,0 +1,31 @@
+@use "../../variables" as *;
+
+.textBlock {
+  position: relative;
+
+  .line {
+    position: absolute;
+    display: block;
+    top: -5.7rem;
+    left: 0;
+    height: 1px;
+    width: 6.5rem;
+    background-color: $light-grey;
+  }
+
+  .title {
+    font-size: 7.2rem;
+    color: $very-dark-blue;
+    letter-spacing: -2px;
+    font-weight: 700;
+    margin-bottom: 5rem;
+  }
+
+  .text {
+    font-size: 1.8rem;
+    color: $dark-grey;
+    line-height: 2.4rem;
+    white-space: pre-wrap;
+  }
+}
+

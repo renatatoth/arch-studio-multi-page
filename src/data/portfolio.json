@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Seraph Station",
+    "date": "September 2019",
+    "imgUrl" : "image-seraph.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Eebox Building",
+    "date": "August 2017",
+    "imgUrl" : "image-eebox.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Federal II Tower",
+    "date": "March 2017",
+    "imgUrl" : "image-federal.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Project Del Sol",
+    "date": "January 2016",
+    "imgUrl" : "image-del-sol.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Le Prototype",
+    "date": "October 2015",
+    "imgUrl" : "image-prototype.jpg"
+  },
+  {
+    "id": 6,
+    "title": "228B Tower",
+    "date": "April 2015",
+    "imgUrl" : "image-228b.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Grand Edelweiss Hotel",
+    "date": "December 2013",
+    "imgUrl" : "image-seraph.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Netcry Tower",
+    "date": "August 2012",
+    "imgUrl" : "image-netcry.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Hypers",
+    "date": "January 2012",
+    "imgUrl" : "image-hypers.jpg"
+  },
+  {
+    "id": 10,
+    "title": "SXIV Tower",
+    "date": "March 2011",
+    "imgUrl" : "image-sxiv.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Trinity Bank Tower",
+    "date": "September 2010",
+    "imgUrl" : "image-trinity.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Project Paramour",
+    "date": "February 2008",
+    "imgUrl" : "image-paramour.jpg"
+  }
+]

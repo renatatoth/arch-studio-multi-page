@@ -2,9 +2,10 @@
 
 .footer {
   grid-row: 3 / -1;
-  grid-column: 1 / 10;
+  grid-column: 1 / 12;
   background-color: $very-light-grey;
-  margin-right: -3.25rem;
+  margin-right: 3.25rem;
+  position: relative;
 }
 
 .nav {
@@ -44,4 +45,11 @@
       color: $very-dark-blue;
     }
   }
+}
+
+.btnContainer {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
 }

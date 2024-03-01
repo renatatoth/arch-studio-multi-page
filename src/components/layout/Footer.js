@@ -1,6 +1,7 @@
 import classes from "./Footer.module.css";
 import {Link, NavLink} from "react-router-dom";
 import logo from "../../assets/logo.svg";
+import Button from "../ui/Button";
 
 const Footer = () => {
     return (
@@ -15,6 +16,9 @@ const Footer = () => {
                     <li className={classes.navItem}><NavLink to="/contact">Contact</NavLink></li>
                 </ul>
             </nav>
+            <div className={classes.btnContainer}>
+                <Button to="portfolio">See Our Portfolio</Button>
+            </div>
         </footer>
     );
 };

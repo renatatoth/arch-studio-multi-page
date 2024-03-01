@@ -38,9 +38,7 @@ html {
 
 body {
   background-color: #FFF;
-  display: flex;
-  justify-content: center;
-  margin: unset;
+  padding: 0 11.4%;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -2,9 +2,11 @@
 /* COLORS */
 /* MIXINS */
 .wrapper {
+  max-width: 111rem;
   display: grid;
-  grid-template-columns: repeat(12, 6.5rem);
+  grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
   column-gap: 3rem;
+  grid-column: 1/-1;
   margin-bottom: 20rem;
   grid-template-rows: 1fr;
   align-items: end;
@@ -12,7 +14,7 @@
 }
 
 .imgContainer {
-  grid-column: 1/8;
+  grid-column: 1/-1;
   grid-row: 1;
   overflow: hidden;
   filter: brightness(50%);
@@ -28,6 +30,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
+  padding-left: 18rem;
 }
 .textContainer .title {
   font-size: 25rem;
@@ -38,31 +41,6 @@
   position: absolute;
   right: 0;
   top: -8.5rem;
-}
-.textContainer .subTitle {
-  width: 44rem;
-  font-size: 7.2rem;
-  color: #1B1D23;
-  letter-spacing: -2px;
-  font-weight: 700;
-  margin-bottom: 5rem;
-  position: relative;
-}
-.textContainer .subTitle::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -5.7rem;
-  left: 0;
-  height: 1px;
-  width: 6.5rem;
-  background-color: #C8CCD8;
-}
-.textContainer .description {
-  width: 44rem;
-  font-size: 1.8rem;
-  color: #60636D;
-  line-height: 2.4rem;
 }
 
 /*# sourceMappingURL=Hero.module.css.map */

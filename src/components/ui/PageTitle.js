@@ -2,7 +2,7 @@ import classes from "./PageTitle.module.scss";
 
 const PageTitle = ({children}) => {
     return (
-        <span className={classes.pageTitle}>{children}</span>
+        <aside className={classes.pageTitle}>{children}</aside>
     );
 };
 

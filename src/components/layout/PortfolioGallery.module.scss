@@ -1,0 +1,9 @@
+@use '../../variables' as *;
+
+.wrapper {
+  @include grid-12-col();
+  grid-column: 1 / -1;
+  grid-auto-rows: 56rem;
+  grid-row-gap: 3.2rem;
+  margin-bottom: 16rem;
+}

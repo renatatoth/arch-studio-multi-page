@@ -1,0 +1,44 @@
+/* FONTS */
+/* COLORS */
+/* MIXINS */
+.welcome {
+  max-width: 111rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
+  column-gap: 3rem;
+  grid-column: 1/-1;
+  margin-bottom: 20rem;
+}
+.welcome .textContainer {
+  grid-column: 3/8;
+  display: flex;
+  align-items: flex-end;
+}
+.welcome .imgContainer {
+  grid-column: 9/-1;
+}
+
+.about {
+  grid-column: 1/-1;
+  margin-bottom: 20rem;
+  position: relative;
+}
+.about .imgContainer {
+  filter: brightness(50%);
+}
+.about .textContainer {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 19rem;
+  width: 44rem;
+}
+.about .textContainer > h2 {
+  font-size: 7.2rem;
+  color: #FFF;
+  letter-spacing: -2px;
+  font-weight: 700;
+  margin-bottom: 2.7rem;
+}
+
+/*# sourceMappingURL=Home.module.css.map */
