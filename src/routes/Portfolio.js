@@ -1,5 +1,5 @@
-import PageTitle from "../components/ui/PageTitle";
-import PortfolioGallery from "../components/layout/PortfolioGallery";
+import PageTitle from "../components/UI/PageTitle";
+import PortfolioGallery from "../components/Portfolio/PortfolioGallery";
 import portfolioData from '../data/portfolio.json';
 
 const Portfolio = () => {

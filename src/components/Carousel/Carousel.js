@@ -1,5 +1,5 @@
 import {useState, useEffect, useRef} from "react";
-import Button from "./Button";
+import Button from "../UI/Button";
 import CarouselButton from "./CarouselButton";
 import classes from './Carousel.module.scss';
 

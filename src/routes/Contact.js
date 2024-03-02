@@ -1,5 +1,5 @@
-import PageTitle from "../components/ui/PageTitle";
-import Hero from "../components/layout/Hero";
+import PageTitle from "../components/UI/PageTitle";
+import Hero from "../components/UI/Hero";
 
 const Contact = () => {
     return (

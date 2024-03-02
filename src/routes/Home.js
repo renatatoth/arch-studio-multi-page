@@ -1,7 +1,7 @@
-import PageTitle from "../components/ui/PageTitle";
-import Carousel from "../components/ui/Carousel";
-import TextBlock from "../components/layout/TextBlock";
-import Button from "../components/ui/Button";
+import PageTitle from "../components/UI/PageTitle";
+import Carousel from "../components/Carousel/Carousel";
+import TextBlock from "../components/UI/TextBlock";
+import Button from "../components/UI/Button";
 import carouselData from "../data/carousel.json";
 import classes from './Home.module.scss';
 

@@ -1,7 +1,7 @@
 import classes from "./Footer.module.css";
 import {Link, NavLink} from "react-router-dom";
 import logo from "../../assets/logo.svg";
-import Button from "../ui/Button";
+import Button from "../UI/Button";
 
 const Footer = () => {
     return (

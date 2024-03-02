@@ -1,4 +1,4 @@
-import PageTitle from "../components/ui/PageTitle";
+import PageTitle from "../components/UI/PageTitle";
 import classes from './NotFound.module.scss';
 
 const NotFound = () => {
