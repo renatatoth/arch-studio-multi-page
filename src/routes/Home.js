@@ -2,6 +2,7 @@ import PageTitle from "../components/UI/PageTitle";
 import Carousel from "../components/Carousel/Carousel";
 import TextBlock from "../components/UI/TextBlock";
 import Button from "../components/UI/Button";
+import Featured from "../components/UI/Featured";
 import carouselData from "../data/carousel.json";
 import classes from './Home.module.scss';
 
@@ -31,7 +32,7 @@ We work closely with our clients so that we understand the intricacies of each p
                     <Button to="about">About Us</Button>
                 </div>
             </section>
-
+            <Featured/>
         </>
     );
 };

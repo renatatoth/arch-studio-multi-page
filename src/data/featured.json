@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Project Del Sol",
+    "date": "January 2016",
+    "imgUrl" : "image-del-sol.jpg"
+  },
+  {
+    "id": 2,
+    "title": "228B Tower",
+    "date": "April 2015",
+    "imgUrl" : "image-228b.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Le Prototype",
+    "date": "October 2015",
+    "imgUrl" : "image-prototype.jpg"
+  }
+]

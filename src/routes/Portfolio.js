@@ -6,7 +6,7 @@ const Portfolio = () => {
     return (
         <>
             <PageTitle>Portfolio</PageTitle>
-            <PortfolioGallery data={portfolioData}/>
+            <PortfolioGallery data={portfolioData} showNumber={false}/>
         </>
     );
 };

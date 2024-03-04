@@ -1,0 +1,9 @@
+.featured {
+  grid-column: 1/-1;
+}
+.featured .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=Featured.module.css.map */
