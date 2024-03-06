@@ -3,11 +3,16 @@
 /* MIXINS */
 .textBlock {
   position: relative;
+  white-space: pre-wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: inherit;
 }
 .textBlock .line {
   position: absolute;
   display: block;
-  top: -5.7rem;
+  top: 0;
   left: 0;
   height: 1px;
   width: 6.5rem;
@@ -24,7 +29,6 @@
   font-size: 1.8rem;
   color: #60636D;
   line-height: 2.4rem;
-  white-space: pre-wrap;
 }
 
 /*# sourceMappingURL=TextBlock.module.css.map */

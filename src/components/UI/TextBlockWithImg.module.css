@@ -1,0 +1,23 @@
+/* FONTS */
+/* COLORS */
+/* MIXINS */
+.wrapper {
+  grid-column: 1/-1;
+  max-width: 111rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
+  column-gap: 3rem;
+  grid-template-rows: 1fr;
+  align-items: end;
+}
+.wrapper .textContainer {
+  grid-column: 1/6;
+  grid-row: 1;
+  height: 56.8rem;
+}
+.wrapper .imgContainer {
+  grid-column: 7/-1;
+  grid-row: 1;
+}
+
+/*# sourceMappingURL=TextBlockWithImg.module.css.map */

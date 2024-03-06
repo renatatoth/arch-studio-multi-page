@@ -1,0 +1,19 @@
+@use '../../variables' as *;
+
+.wrapper {
+  grid-column: 1 / -1;
+  @include grid-12-col();
+  grid-template-rows: 1fr;
+  align-items: end;
+
+  .textContainer {
+    grid-column: 1 / 6;
+    grid-row: 1;
+    height: 56.8rem;
+  }
+
+  .imgContainer {
+    grid-column: 7 / -1;
+    grid-row: 1;
+  }
+}

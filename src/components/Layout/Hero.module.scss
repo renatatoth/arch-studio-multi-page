@@ -3,7 +3,6 @@
 .wrapper {
   @include grid-12-col();
   grid-column: 1 / -1;
-  margin-bottom: 20rem;
   grid-template-rows: 1fr;
   align-items: end;
   position: relative;
@@ -47,6 +46,7 @@
     justify-content: flex-end;
     align-items: flex-end;
     padding-left: 18rem;
+    padding-top: 16rem;
   }
 
   .imgContainer {

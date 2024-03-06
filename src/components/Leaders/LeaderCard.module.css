@@ -1,0 +1,26 @@
+/* FONTS */
+/* COLORS */
+/* MIXINS */
+.card {
+  height: 40rem;
+  width: 35rem;
+  margin-bottom: 6.3rem;
+}
+.card:nth-last-of-type(-n+2) {
+  margin-bottom: 0;
+}
+.card .imgContainer {
+  margin-bottom: 1.5rem;
+}
+.card .name {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  font-weight: 700;
+}
+.card .jobTitle {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #1B1D23;
+}
+
+/*# sourceMappingURL=LeaderCard.module.css.map */

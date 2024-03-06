@@ -7,7 +7,6 @@
   grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
   column-gap: 3rem;
   grid-column: 1/-1;
-  margin-bottom: 20rem;
   grid-template-rows: 1fr;
   align-items: end;
   position: relative;
@@ -46,6 +45,7 @@
   justify-content: flex-end;
   align-items: flex-end;
   padding-left: 18rem;
+  padding-top: 16rem;
 }
 .alignRight .imgContainer {
   grid-column: 1/-1;

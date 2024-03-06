@@ -1,0 +1,26 @@
+[
+  {
+    "id" : 1,
+    "name": "Jake Richards",
+    "jobTitle": "Chief Architect",
+    "img": "avatar-jake.jpg"
+  },
+  {
+    "id" : 2,
+    "name": "Thompson Smith",
+    "jobTitle": "Head of Finance",
+    "img": "avatar-thompson.jpg"
+  },
+  {
+    "id" : 3,
+    "name": "Jackson Rourke",
+    "jobTitle": "Lead Designer",
+    "img": "avatar-jackson.jpg"
+  },
+  {
+    "id" : 4,
+    "name": "Maria Simpson",
+    "jobTitle": "Senior Architect",
+    "img": "avatar-maria.jpg"
+  }
+]
