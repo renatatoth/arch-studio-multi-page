@@ -1,0 +1,25 @@
+.banner {
+  grid-column: 1 / -1;
+  margin-bottom: 20rem;
+  position: relative;
+
+  .imgContainer {
+    filter: brightness(50%);
+  }
+
+  .textContainer {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 19rem;
+    width: 44rem;
+
+    & > h2 {
+      font-size: 7.2rem;
+      color: #FFF;
+      letter-spacing: -2px;
+      font-weight: 700;
+      margin-bottom: 2.7rem;
+    }
+  }
+}

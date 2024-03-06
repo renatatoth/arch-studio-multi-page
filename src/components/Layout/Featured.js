@@ -1,8 +1,8 @@
-import TextBlock from "./TextBlock";
+import TextBlock from "../UI/TextBlock";
 import PortfolioGallery from "../Portfolio/PortfolioGallery";
-import Button from "./Button";
+import Button from "../UI/Button";
 import classes from './Featured.module.scss';
-import featuredData from './../../data/featured.json';
+import featuredData from '../../data/featured.json';
 
 const Featured = () => {
     return (
