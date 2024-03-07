@@ -1,0 +1,19 @@
+/* FONTS */
+/* COLORS */
+/* MIXINS */
+.card {
+  width: 35rem;
+  font-size: 1.8rem;
+  color: #60636D;
+}
+.card .name {
+  font-weight: 700;
+  line-height: 3.5rem;
+  margin-bottom: 1.4rem;
+}
+.card .details {
+  line-height: 2.4rem;
+  margin-bottom: 5.5rem;
+}
+
+/*# sourceMappingURL=ContactCard.module.css.map */

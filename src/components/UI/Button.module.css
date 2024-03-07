@@ -23,13 +23,28 @@
   display: inline-block;
   filter: invert(100) brightness(100);
 }
-
-.withText {
+.btn.withText {
   padding: 2.5rem 3.3rem;
   height: 7.2rem;
 }
-.withText .icon {
+.btn.withText .icon {
   margin-left: 2.4rem;
+}
+
+.btn.secondary {
+  background-color: #FFF;
+  color: #1B1D23;
+  font-weight: 700;
+  height: 2.5rem;
+}
+.btn.secondary .icon {
+  filter: none;
+}
+.btn.secondary:hover {
+  text-decoration: underline;
+}
+.btn.secondary.withText {
+  padding: 1rem 0.6rem;
 }
 
 /*# sourceMappingURL=Button.module.css.map */
