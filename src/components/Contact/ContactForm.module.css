@@ -1,0 +1,101 @@
+/* FONTS */
+/* COLORS */
+/* MIXINS */
+.wrapper {
+  grid-column: 1/-1;
+  max-width: 111rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
+  column-gap: 3rem;
+}
+.wrapper .title {
+  grid-column: 1/4;
+}
+
+.form {
+  grid-column: 5/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+.form .formGroup {
+  width: 100%;
+  margin-bottom: 4.3rem;
+  position: relative;
+}
+.form .formGroup:last-of-type {
+  margin-bottom: -2px;
+}
+.form .formGroup .textInput {
+  height: 4.4rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #1B1D23;
+  padding: 0.2rem 3.5rem 2.5rem;
+  font-size: 2.3rem;
+  color: #1B1D23;
+  position: relative;
+}
+.form .formGroup .textInput::placeholder {
+  color: #C8CCD8;
+}
+.form .formGroup .textInput:hover, .form .formGroup .textInput:active {
+  border-bottom: 2px solid #1B1D23;
+  transform: translateY(1px);
+}
+.form .formGroup .textInput:-webkit-autofill, .form .formGroup .textInput:-webkit-autofill:hover, .form .formGroup .textInput:-webkit-autofill:focus, .form .formGroup .textInput:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #FFF inset !important;
+}
+.form .formGroup .message {
+  height: 9rem;
+  resize: none;
+}
+.form .formGroup .message:hover, .form .formGroup .message:active {
+  transform: translateY(0);
+}
+.form .formGroup .error {
+  border-bottom: 1px solid #DF5656;
+}
+.form .formGroup .error.textInput::placeholder {
+  color: #DF5656;
+  opacity: 0.5;
+}
+.form .formGroup .errorMessage {
+  position: absolute;
+  right: 1.6rem;
+  bottom: 1.6rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #DF5656;
+}
+.form .formBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  height: 8rem;
+  background-color: #1B1D23;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+}
+.form .formBtn:hover {
+  background-color: #60636D;
+}
+.form .formBtn:disabled, .form .formBtn[disabled] {
+  opacity: 0.5;
+}
+.form .formBtn > img {
+  filter: invert(100) brightness(100);
+}
+.form .successMessage {
+  font-size: 1.8rem;
+  position: absolute;
+  left: 3.5rem;
+  bottom: 2.5rem;
+}
+
+/*# sourceMappingURL=ContactForm.module.css.map */

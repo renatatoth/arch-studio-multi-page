@@ -2,6 +2,7 @@ import PageTitle from "../components/UI/PageTitle";
 import Hero from "../components/Layout/Hero";
 import ContactList from "../components/Contact/ContactList";
 import Map from "../components/UI/Map";
+import ContactForm from "../components/Contact/ContactForm";
 import heroImage from "../assets/contact/desktop/image-hero.jpg";
 import contactData from "../data/offices.json";
 
@@ -18,6 +19,7 @@ const Contact = () => {
             />
             <ContactList data={contactData}/>
             <Map/>
+            <ContactForm/>
         </>
     );
 };

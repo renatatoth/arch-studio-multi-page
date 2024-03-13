@@ -6,7 +6,8 @@
   justify-content: center;
   min-width: 8rem;
   width: fit-content;
-  height: 8rem;
+  padding: 2.5rem 3.3rem;
+  height: 7.2rem;
   background-color: $very-dark-blue;
   color: #FFF;
   font-size: 1.8rem;
@@ -23,24 +24,16 @@
   .icon {
     display: inline-block;
     filter: invert(100) brightness(100);
-  }
-
-  &.withText {
-    padding: 2.5rem 3.3rem;
-    height: 7.2rem;
-
-    .icon {
-      margin-left: 2.4rem;
-    }
+    margin-left: 2.4rem;
   }
 }
-
 
 .btn.secondary {
   background-color: #FFF;
   color: $very-dark-blue;
   font-weight: 700;
   height: 2.5rem;
+  padding: 1rem .6rem;
 
   .icon {
     filter: none;
@@ -48,9 +41,5 @@
 
   &:hover {
     text-decoration: underline;
-  }
-
-  &.withText {
-    padding: 1rem .6rem;
   }
 }

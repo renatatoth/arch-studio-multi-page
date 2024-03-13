@@ -7,7 +7,8 @@
   justify-content: center;
   min-width: 8rem;
   width: fit-content;
-  height: 8rem;
+  padding: 2.5rem 3.3rem;
+  height: 7.2rem;
   background-color: #1B1D23;
   color: #FFF;
   font-size: 1.8rem;
@@ -22,12 +23,6 @@
 .btn .icon {
   display: inline-block;
   filter: invert(100) brightness(100);
-}
-.btn.withText {
-  padding: 2.5rem 3.3rem;
-  height: 7.2rem;
-}
-.btn.withText .icon {
   margin-left: 2.4rem;
 }
 
@@ -36,15 +31,13 @@
   color: #1B1D23;
   font-weight: 700;
   height: 2.5rem;
+  padding: 1rem 0.6rem;
 }
 .btn.secondary .icon {
   filter: none;
 }
 .btn.secondary:hover {
   text-decoration: underline;
-}
-.btn.secondary.withText {
-  padding: 1rem 0.6rem;
 }
 
 /*# sourceMappingURL=Button.module.css.map */

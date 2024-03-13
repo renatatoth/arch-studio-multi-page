@@ -1,0 +1,117 @@
+@use '../../variables' as *;
+
+.wrapper {
+  grid-column: 1 / -1;
+  @include grid-12-col();
+
+  .title {
+    grid-column: 1 / 4;
+  }
+}
+
+.form {
+  grid-column: 5 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+
+  .formGroup {
+    width: 100%;
+    margin-bottom: 4.3rem;
+    position: relative;
+
+    &:last-of-type {
+      margin-bottom: -2px;
+    }
+
+    .textInput {
+      height: 4.4rem;
+      width: 100%;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid $very-dark-blue;
+      padding: .2rem 3.5rem 2.5rem;
+      font-size: 2.3rem;
+      color: $very-dark-blue;
+      position: relative;
+
+      &::placeholder {
+        color: $light-grey;
+      }
+
+      &:hover, &:active {
+        border-bottom: 2px solid $very-dark-blue;
+        transform: translateY(1px);
+      }
+
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active{
+        -webkit-box-shadow: 0 0 0 30px #FFF inset !important;
+      }
+    }
+
+    .message {
+      height: 9rem;
+      resize: none;
+
+      &:hover, &:active {
+        transform: translateY(0);
+      }
+    }
+
+    .error {
+      border-bottom: 1px solid $red;
+
+      &.textInput::placeholder {
+        color: $red;
+        opacity: 0.5;
+      }
+    }
+
+    .errorMessage {
+      position: absolute;
+      right: 1.6rem;
+      bottom: 1.6rem;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: $red;
+    }
+  }
+
+  .formBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 8rem;
+    background-color: $very-dark-blue;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    @include smooth-transition();
+
+    &:hover {
+      background-color: $dark-grey;
+    }
+
+    &:disabled,
+    &[disabled] {
+      opacity: 0.5;
+    }
+
+    & > img {
+      filter: invert(100) brightness(100);
+    }
+  }
+
+  .successMessage {
+    font-size: 1.8rem;
+    position: absolute;
+    left: 3.5rem;
+    bottom: 2.5rem;
+  }
+}
+
