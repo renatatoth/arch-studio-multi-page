@@ -1,6 +1,11 @@
+/* FONTS */
+/* COLORS */
+/* VIEWPORTS */
+/* MIXINS */
 .banner {
   grid-column: 1/-1;
   position: relative;
+  height: 56rem;
 }
 .banner .imgContainer {
   filter: brightness(50%);
@@ -18,6 +23,12 @@
   letter-spacing: -2px;
   font-weight: 700;
   margin-bottom: 2.7rem;
+}
+
+@media (max-width: 768px) {
+  .banner .textContainer {
+    left: 5.8rem;
+  }
 }
 
 /*# sourceMappingURL=Banner.module.css.map */

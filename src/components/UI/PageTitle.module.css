@@ -1,5 +1,6 @@
 /* FONTS */
 /* COLORS */
+/* VIEWPORTS */
 /* MIXINS */
 .pageTitle {
   position: absolute;
@@ -22,6 +23,12 @@
   height: 1px;
   width: 10.4rem;
   background-color: #C8CCD8;
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    left: -4rem;
+  }
 }
 
 /*# sourceMappingURL=PageTitle.module.css.map */

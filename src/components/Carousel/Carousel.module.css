@@ -1,5 +1,6 @@
 /* FONTS */
 /* COLORS */
+/* VIEWPORTS */
 /* MIXINS */
 .wrapper {
   grid-column: 1/-1;
@@ -12,7 +13,7 @@
   overflow: hidden;
   filter: brightness(50%);
 }
-.imgContainer .image {
+.imgContainer img {
   display: block;
   width: 100%;
 }
@@ -41,6 +42,11 @@
   width: 44rem;
 }
 
+@media (max-width: 768px) {
+  .textContainer {
+    left: 5.8rem;
+  }
+}
 .btnContainer {
   display: flex;
   position: absolute;

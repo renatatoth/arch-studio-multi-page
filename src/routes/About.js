@@ -2,7 +2,6 @@ import PageTitle from "../components/UI/PageTitle";
 import Hero from "../components/Layout/Hero";
 import TextBlockWithImg from "../components/UI/TextBlockWithImg";
 import Leaders from "../components/Leaders/Leaders";
-import heroImage from '../assets/about/desktop/image-hero.jpg';
 import heritageImage from '../assets/about/desktop/image-heritage.jpg';
 import leaderData from '../data/leaders.json';
 
@@ -14,7 +13,7 @@ const About = () => {
                 title="About"
                 subTitle="Your team of professionals"
                 description="Our small team of world-class professionals will work with you every step of the way. Strong relationships are at the core of everything we do. This extends to the relationship our projects have with their surroundings."
-                bgImage={heroImage}
+                bgImage={["about", "image-hero.jpg"]}
                 layout="align-right"
             />
             <TextBlockWithImg title={`Our\nHeritage`} img={heritageImage}>

@@ -9,12 +9,21 @@ $light-grey: #C8CCD8;
 $very-light-grey: #EEEFF4;
 $red: #DF5656;
 
+/* VIEWPORTS */
+$tablet: 768px;
+$mobile: 375px;
+
 /* MIXINS */
 @mixin grid-12-col {
   max-width: 111rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
   column-gap: 3rem;
+  
+  @media (max-width: $tablet) {
+    grid-template-columns: repeat(auto-fill, minmax(4.8rem, 1fr));
+    column-gap: 1rem;
+  }
 }
 
 @mixin smooth-transition {

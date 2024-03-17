@@ -1,5 +1,6 @@
 /* FONTS */
 /* COLORS */
+/* VIEWPORTS */
 /* MIXINS */
 .wrapper {
   max-width: 111rem;
@@ -10,6 +11,12 @@
   grid-auto-rows: 56rem;
   grid-row-gap: 3.2rem;
   margin-bottom: 16rem;
+}
+@media (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(4.8rem, 1fr));
+    column-gap: 1rem;
+  }
 }
 
 /*# sourceMappingURL=PortfolioGallery.module.css.map */

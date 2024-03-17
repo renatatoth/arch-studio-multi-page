@@ -23,3 +23,9 @@
     background-color: $light-grey;
   }
 }
+
+@media (max-width: $tablet) {
+  .pageTitle {
+    left: -4rem;
+  }
+}

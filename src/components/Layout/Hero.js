@@ -1,15 +1,20 @@
 import TextBlock from "../UI/TextBlock";
 import classes from './Hero.module.scss';
 
-const Hero = ({title, subTitle, description, bgImage, layout}) => {
+const Hero = ({title, subTitle, description, bgImage}) => {
+    const [bgImgFolder, bgImgUrl] = bgImage;
+
     return (
-        <section className={`${classes.wrapper} ${layout === 'align-center' ? classes.alignCenter : layout === 'align-right' ? classes.alignRight : ''}`}>
+        <section className={classes.wrapper}>
             <div className={classes.imgContainer}>
-                <img src={bgImage} alt={title}/>
+                <picture>
+                    <source media="(max-width: 768px)" srcSet={require(`../../assets/${bgImgFolder}/tablet/${bgImgUrl}`)}/>
+                    <img src={require(`../../assets/${bgImgFolder}/desktop/${bgImgUrl}`)} alt={title}/>
+                </picture>
             </div>
             <div className={classes.textContainer}>
                 <h1 className={classes.title}>{title}</h1>
-                <TextBlock title={subTitle} hasLine={layout === 'align-right' && true}>{description}</TextBlock>
+                <TextBlock title={subTitle} hasLine>{description}</TextBlock>
             </div>
         </section>
     );

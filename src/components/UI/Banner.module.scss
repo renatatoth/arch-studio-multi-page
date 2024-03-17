@@ -1,6 +1,9 @@
+@use "../../variables" as *;
+
 .banner {
   grid-column: 1 / -1;
   position: relative;
+  height: 56rem;
 
   .imgContainer {
     filter: brightness(50%);
@@ -19,6 +22,14 @@
       letter-spacing: -2px;
       font-weight: 700;
       margin-bottom: 2.7rem;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .banner {
+    .textContainer {
+      left: 5.8rem;
     }
   }
 }

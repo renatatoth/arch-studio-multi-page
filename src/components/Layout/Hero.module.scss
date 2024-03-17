@@ -6,35 +6,18 @@
   grid-template-rows: 1fr;
   align-items: end;
   position: relative;
-}
-
-.title {
-  font-size: 25rem;
-  color: $very-light-grey;
-  letter-spacing: -5px;
-  font-weight: 700;
-  line-height: 20rem;
-  position: absolute;
-  top: -8.5rem;
-}
-
-.alignCenter {
-  .textContainer {
-    grid-column: 3 / 8;
-    grid-row: 1;
-  }
-
-  .imgContainer {
-    grid-column: 9 / -1;
-    grid-row: 1;
-  }
 
   .title {
-    left: 0;
+    font-size: 25rem;
+    color: $very-light-grey;
+    letter-spacing: -5px;
+    font-weight: 700;
+    line-height: 20rem;
+    position: absolute;
+    top: -8.5rem;
+    right: 0;
   }
-}
 
-.alignRight {
   .textContainer {
     grid-column: 6 / -1;
     grid-row: 1;
@@ -55,8 +38,5 @@
     overflow: hidden;
     filter: brightness(50%);
   }
-
-  .title {
-    right: 0;
-  }
 }
+

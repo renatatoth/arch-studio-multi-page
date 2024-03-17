@@ -1,5 +1,6 @@
 /* FONTS */
 /* COLORS */
+/* VIEWPORTS */
 /* MIXINS */
 .wrapper {
   grid-column: 1/-1;
@@ -7,6 +8,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
   column-gap: 3rem;
+}
+@media (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(4.8rem, 1fr));
+    column-gap: 1rem;
+  }
 }
 .wrapper .title {
   grid-column: 1/3;

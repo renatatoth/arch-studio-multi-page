@@ -1,0 +1,49 @@
+@use '../../variables' as *;
+
+.wrapper {
+  @include grid-12-col();
+  grid-column: 1 / -1;
+  grid-template-rows: 1fr;
+  align-items: end;
+  position: relative;
+
+  .textContainer {
+    grid-column: 3 / 8;
+    grid-row: 1;
+  }
+
+  .imgContainer {
+    grid-column: 9 / -1;
+    grid-row: 1;
+  }
+
+  .title {
+    font-size: 25rem;
+    color: $very-light-grey;
+    letter-spacing: -5px;
+    font-weight: 700;
+    line-height: 20rem;
+    position: absolute;
+    top: -8.5rem;
+    left: 0;
+  }
+}
+
+@media (max-width: $tablet) {
+  .wrapper {
+    margin-top: 7rem;
+
+    .textContainer {
+      grid-column: 1 / -1;
+    }
+
+    .imgContainer {
+      display: none;
+    }
+
+    .title {
+      font-size: 15.7rem;
+      top: -16rem;
+    }
+  }
+}

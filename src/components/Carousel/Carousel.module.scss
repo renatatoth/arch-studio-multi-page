@@ -11,7 +11,7 @@
   overflow: hidden;
   filter: brightness(50%);
 
-  .image {
+  & img {
     display: block;
     width: 100%;
   }
@@ -40,6 +40,12 @@
     font-size: 1.8rem;
     line-height: 2.4rem;
     width: 44rem;
+  }
+}
+
+@media (max-width: $tablet) {
+  .textContainer {
+    left: 5.8rem;
   }
 }
 
