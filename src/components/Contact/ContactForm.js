@@ -9,14 +9,17 @@ const ContactForm = () => {
     const {
         register,
         handleSubmit,
-        formState: {errors, isSubmitting},
+        formState: {errors, isSubmitting, isValid},
         reset
     } = useForm();
 
     const onSubmit = async (data) => {
         await new Promise((resolve) => setTimeout(resolve, 1000));
-        reset();
-        setSubmitSuccess(true);
+
+        if (isValid) {
+            setSubmitSuccess(true);
+            reset();
+        }
     };
 
     return (

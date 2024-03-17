@@ -20,3 +20,7 @@ $red: #DF5656;
 @mixin smooth-transition {
   transition: all .25s ease-in;
 }
+
+@mixin white-svg {
+  filter: brightness(0) invert(1);
+}

@@ -6,15 +6,19 @@
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
 }
 .card .overlay {
-  height: 50%;
+  height: 100%;
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 10;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%);
+}
+.card:hover .overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%), rgba(255, 255, 255, 0.5);
 }
 .card .textWrapper {
   color: #FFF;

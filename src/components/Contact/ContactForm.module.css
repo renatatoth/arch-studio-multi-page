@@ -89,7 +89,7 @@
   opacity: 0.5;
 }
 .form .formBtn > img {
-  filter: invert(100) brightness(100);
+  filter: brightness(0) invert(1);
 }
 .form .successMessage {
   font-size: 1.8rem;

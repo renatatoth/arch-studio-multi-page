@@ -103,7 +103,7 @@
     }
 
     & > img {
-      filter: invert(100) brightness(100);
+      @include white-svg();
     }
   }
 

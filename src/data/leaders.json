@@ -3,24 +3,32 @@
     "id" : 1,
     "name": "Jake Richards",
     "jobTitle": "Chief Architect",
-    "img": "avatar-jake.jpg"
+    "img": "avatar-jake.jpg",
+    "linkedIn": "https://www.linkedin.com",
+    "twitter": "https://www.twitter.com"
   },
   {
     "id" : 2,
     "name": "Thompson Smith",
     "jobTitle": "Head of Finance",
-    "img": "avatar-thompson.jpg"
+    "img": "avatar-thompson.jpg",
+    "linkedIn": "https://www.linkedin.com",
+    "twitter": "https://www.twitter.com"
   },
   {
     "id" : 3,
     "name": "Jackson Rourke",
     "jobTitle": "Lead Designer",
-    "img": "avatar-jackson.jpg"
+    "img": "avatar-jackson.jpg",
+    "linkedIn": "https://www.linkedin.com",
+    "twitter": "https://www.twitter.com"
   },
   {
     "id" : 4,
     "name": "Maria Simpson",
     "jobTitle": "Senior Architect",
-    "img": "avatar-maria.jpg"
+    "img": "avatar-maria.jpg",
+    "linkedIn": "https://www.linkedin.com",
+    "twitter": "https://www.twitter.com"
   }
 ]

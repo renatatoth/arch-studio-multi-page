@@ -22,7 +22,7 @@
 }
 .btn .icon {
   display: inline-block;
-  filter: invert(100) brightness(100);
+  filter: brightness(0) invert(1);
   margin-left: 2.4rem;
 }
 

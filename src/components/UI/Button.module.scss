@@ -23,7 +23,7 @@
 
   .icon {
     display: inline-block;
-    filter: invert(100) brightness(100);
+    @include white-svg();
     margin-left: 2.4rem;
   }
 }

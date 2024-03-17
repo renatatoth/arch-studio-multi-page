@@ -11,6 +11,26 @@
 }
 .card .imgContainer {
   margin-bottom: 1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+.card .imgContainer .linksContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.card .imgContainer .linksContainer .logo {
+  filter: brightness(0) invert(1);
+  margin: 0 1.6rem;
+}
+.card .imgContainer:hover .linksContainer {
+  display: flex;
 }
 .card .name {
   font-size: 3.2rem;
