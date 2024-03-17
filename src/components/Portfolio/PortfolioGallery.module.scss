@@ -7,3 +7,10 @@
   grid-row-gap: 3.2rem;
   margin-bottom: 16rem;
 }
+
+@media (max-width: $tablet) {
+  .wrapper {
+    grid-auto-rows: 24rem;
+    grid-row-gap: 2.4rem;
+  }
+}

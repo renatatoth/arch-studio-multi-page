@@ -19,4 +19,11 @@
   }
 }
 
+@media (max-width: 768px) {
+  .wrapper {
+    grid-auto-rows: 24rem;
+    grid-row-gap: 2.4rem;
+  }
+}
+
 /*# sourceMappingURL=PortfolioGallery.module.css.map */

@@ -1,11 +1,9 @@
+@use "../../variables" as *;
+
 .card {
   grid-column: span 4;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  overflow: hidden;
   position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
   cursor: pointer;
 
   .overlay {
@@ -22,10 +20,20 @@
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%), rgba(255, 255, 255, 0.5);
   }
 
-  .textWrapper {
+  .imgContainer {
+    height: 100%;
+    width: 100%;
+    & img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .textContainer {
+    position: absolute;
+    left: 4rem;
+    bottom: 4rem;
     color: #FFF;
-    margin-left: 4rem;
-    margin-bottom: 4rem;
     z-index: 20;
 
     .projectTitle {
@@ -39,15 +47,26 @@
       line-height: 2.4rem;
       opacity: 0.85;
     }
+  }
+
+  .projectNumber {
+    position: absolute;
+    color: #FFF;
+    right: -1rem;
+    top: 3rem;
+    letter-spacing: -5px;
+    font-size: 25rem;
+    font-weight: 700;
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: $tablet) {
+  .card {
+      grid-column: 1 / -1;
 
     .projectNumber {
-      position: absolute;
-      right: -1.2rem;
-      top: 4rem;
-      letter-spacing: -5px;
-      font-size: 25rem;
-      font-weight: 700;
-      opacity: .75;
+      right: 1rem;
     }
   }
 }

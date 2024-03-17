@@ -1,11 +1,11 @@
+/* FONTS */
+/* COLORS */
+/* VIEWPORTS */
+/* MIXINS */
 .card {
   grid-column: span 4;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  overflow: hidden;
   position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
   cursor: pointer;
 }
 .card .overlay {
@@ -20,30 +20,49 @@
 .card:hover .overlay {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%), rgba(255, 255, 255, 0.5);
 }
-.card .textWrapper {
+.card .imgContainer {
+  height: 100%;
+  width: 100%;
+}
+.card .imgContainer img {
+  height: 100%;
+  width: 100%;
+}
+.card .textContainer {
+  position: absolute;
+  left: 4rem;
+  bottom: 4rem;
   color: #FFF;
-  margin-left: 4rem;
-  margin-bottom: 4rem;
   z-index: 20;
 }
-.card .textWrapper .projectTitle {
+.card .textContainer .projectTitle {
   font-size: 3.2rem;
   line-height: 4rem;
   font-weight: 700;
 }
-.card .textWrapper .projectDate {
+.card .textContainer .projectDate {
   font-size: 1.8rem;
   line-height: 2.4rem;
   opacity: 0.85;
 }
-.card .textWrapper .projectNumber {
+.card .projectNumber {
   position: absolute;
-  right: -1.2rem;
-  top: 4rem;
+  color: #FFF;
+  right: -1rem;
+  top: 3rem;
   letter-spacing: -5px;
   font-size: 25rem;
   font-weight: 700;
-  opacity: 0.75;
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .card {
+    grid-column: 1/-1;
+  }
+  .card .projectNumber {
+    right: 1rem;
+  }
 }
 
 /*# sourceMappingURL=PortfolioCard.module.css.map */
