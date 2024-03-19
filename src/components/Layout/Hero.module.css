@@ -48,4 +48,16 @@
   filter: brightness(50%);
 }
 
+@media (max-width: 768px) {
+  .wrapper .title {
+    font-size: 16rem;
+  }
+  .wrapper .textContainer {
+    grid-column: 2/-1;
+    height: 43rem;
+    padding-left: 6rem;
+    padding-top: 8.8rem;
+  }
+}
+
 /*# sourceMappingURL=Hero.module.css.map */

@@ -27,4 +27,14 @@
   grid-row: 1;
 }
 
+@media (max-width: 768px) {
+  .wrapper .textContainer {
+    grid-column: 1/-1;
+    height: 48.5rem;
+  }
+  .wrapper .imgContainer {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=TextBlockWithImg.module.css.map */

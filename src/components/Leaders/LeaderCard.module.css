@@ -44,4 +44,12 @@
   color: #1B1D23;
 }
 
+@media (max-width: 768px) {
+  .card {
+    height: 33.5rem;
+    width: 28rem;
+    margin-bottom: 10rem;
+  }
+}
+
 /*# sourceMappingURL=LeaderCard.module.css.map */

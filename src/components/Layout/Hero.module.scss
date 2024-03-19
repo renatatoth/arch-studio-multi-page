@@ -40,3 +40,18 @@
   }
 }
 
+@media (max-width: $tablet) {
+  .wrapper {
+    .title {
+      font-size: 16rem;
+    }
+
+    .textContainer {
+      grid-column: 2 / -1;
+      height: 43rem;
+      padding-left: 6rem;
+      padding-top: 8.8rem;
+    }
+  }
+}
+

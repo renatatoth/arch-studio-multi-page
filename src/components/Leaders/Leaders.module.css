@@ -25,4 +25,14 @@
   gap: 3rem;
 }
 
+@media (max-width: 768px) {
+  .wrapper .title {
+    grid-column: 1/-1;
+  }
+  .wrapper .leadersContainer {
+    grid-column: 1/-1;
+    gap: 1rem;
+  }
+}
+
 /*# sourceMappingURL=Leaders.module.css.map */

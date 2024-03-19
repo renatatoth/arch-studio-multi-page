@@ -47,6 +47,12 @@
     line-height: 2.4rem;
     color: $very-dark-blue;
   }
+}
 
-
+@media (max-width: $tablet) {
+  .card {
+    height: 33.5rem;
+    width: 28rem;
+    margin-bottom: 10rem;
+  }
 }

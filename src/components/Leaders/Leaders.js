@@ -6,7 +6,7 @@ const Leaders = ({data}) => {
     return (
         <section className={classes.wrapper}>
             <div className={classes.title}>
-                <TextBlock title="The Leaders" />
+                <TextBlock title={`The\nLeaders`} />
             </div>
             <div className={classes.leadersContainer}>
                 {data.map(l => <LeaderCard key={l.id} leader={l}/>)}
