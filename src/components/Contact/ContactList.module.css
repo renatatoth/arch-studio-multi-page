@@ -27,4 +27,14 @@
   align-items: flex-end;
 }
 
+@media (max-width: 768px) {
+  .wrapper .title {
+    grid-column: 1/-1;
+    height: 24rem;
+  }
+  .wrapper .contacts {
+    grid-column: 1/-1;
+  }
+}
+
 /*# sourceMappingURL=ContactList.module.css.map */

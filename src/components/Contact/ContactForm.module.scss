@@ -115,3 +115,15 @@
   }
 }
 
+@media (max-width: $tablet) {
+  .wrapper {
+    .title {
+      grid-column: 1 / -1;
+    }
+  }
+
+  .form {
+    grid-column: 1 / -1;
+  }
+}
+

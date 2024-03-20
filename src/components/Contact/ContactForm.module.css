@@ -105,4 +105,14 @@
   bottom: 2.5rem;
 }
 
+@media (max-width: 768px) {
+  .wrapper .title {
+    grid-column: 1/-1;
+  }
+
+  .form {
+    grid-column: 1/-1;
+  }
+}
+
 /*# sourceMappingURL=ContactForm.module.css.map */

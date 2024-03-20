@@ -6,7 +6,7 @@ const ContactList = ({data}) => {
     return (
         <section className={classes.wrapper}>
             <div className={classes.title}>
-                <TextBlock title="Contact Details" hasLine={true}/>
+                <TextBlock title={`Contact\nDetails`} hasLine={true}/>
             </div>
             <div className={classes.contacts}>
                 {data.map(c => <ContactCard key={c.id} contact={c}/>)}

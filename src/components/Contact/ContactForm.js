@@ -60,7 +60,7 @@ const ContactForm = () => {
                         className={classes.formBtn}>
                     <img src={arrowIcon} alt="Submit"/>
                 </button>
-                {submitSuccess && <span className={classes.successMessage}>Thank you for getting in touch!</span>}
+                {submitSuccess && <span className={classes.successMessage}>Thanks for getting in touch!</span>}
             </form>
         </section>
     );

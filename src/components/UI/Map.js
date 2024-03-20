@@ -1,10 +1,15 @@
 import classes from "./Map.module.scss";
 import mapImage from "../../assets/contact/desktop/image-map.png";
+import mapImageTablet from "../../assets/contact/tablet/image-map.png";
+
 
 const Map = () => {
     return (
         <section className={classes.map}>
-            <img src={mapImage} alt="Map"/>
+            <picture>
+                <source media="(max-width: 768px)" srcSet={mapImageTablet}/>
+                <img src={mapImage} alt="Map"/>
+            </picture>
         </section>
     );
 };
