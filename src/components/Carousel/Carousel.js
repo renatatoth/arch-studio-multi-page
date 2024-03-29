@@ -37,13 +37,14 @@ const Carousel = ({data}) => {
         <section className={classes.wrapper}>
             <div className={classes.imgContainer}>
                 <picture>
+                    <source media="(max-width: 375px)" srcSet={require(`../../assets/home/mobile/${data[currSlide].imgUrl}`)}/>
                     <source media="(max-width: 768px)" srcSet={require(`../../assets/home/tablet/${data[currSlide].imgUrl}`)}/>
                     <img src={require(`../../assets/home/desktop/${data[currSlide].imgUrl}`)} alt={data[currSlide].title}/>
                 </picture>
             </div>
             <div className={classes.textContainer}>
                 <div>
-                    <h1>{data[currSlide].title}</h1>
+                <h1>{data[currSlide].title}</h1>
                     <p>{data[currSlide].description}</p>
                 </div>
                 <Button to="portfolio">See Our Portfolio</Button>

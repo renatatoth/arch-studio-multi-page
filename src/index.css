@@ -45,4 +45,10 @@ section {
   margin-bottom: 20rem;
 }
 
+@media (max-width: 375px) {
+  section {
+    margin-bottom: 11rem;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */

@@ -30,5 +30,14 @@
     left: 5.8rem;
   }
 }
+@media (max-width: 375px) {
+  .banner .textContainer {
+    left: 3.2rem;
+    width: 80%;
+  }
+  .banner .textContainer > h2 {
+    font-size: 4.8rem;
+  }
+}
 
 /*# sourceMappingURL=Banner.module.css.map */

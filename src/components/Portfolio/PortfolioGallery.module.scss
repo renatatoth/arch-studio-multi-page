@@ -14,3 +14,9 @@
     grid-row-gap: 2.4rem;
   }
 }
+
+@media (max-width: $mobile) {
+  .wrapper {
+    margin: 0 3.2rem;
+  }
+}

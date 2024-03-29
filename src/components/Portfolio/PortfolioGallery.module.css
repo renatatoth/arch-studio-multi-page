@@ -25,5 +25,10 @@
     grid-row-gap: 2.4rem;
   }
 }
+@media (max-width: 375px) {
+  .wrapper {
+    margin: 0 3.2rem;
+  }
+}
 
 /*# sourceMappingURL=PortfolioGallery.module.css.map */

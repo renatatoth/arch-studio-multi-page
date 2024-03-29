@@ -29,3 +29,10 @@
     left: -4rem;
   }
 }
+
+@media (max-width: $mobile) {
+  .pageTitle {
+    display: none;
+  }
+  
+}

@@ -71,3 +71,11 @@
   }
 }
 
+
+@media (max-width: $mobile) {
+  .card {
+    .projectNumber {
+      display: none;
+    }
+  }
+}

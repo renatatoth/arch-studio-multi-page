@@ -30,5 +30,10 @@
     left: -4rem;
   }
 }
+@media (max-width: 375px) {
+  .pageTitle {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=PageTitle.module.css.map */

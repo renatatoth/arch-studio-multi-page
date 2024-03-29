@@ -33,3 +33,16 @@
     }
   }
 }
+
+@media (max-width: $mobile) {
+  .banner {
+    .textContainer {
+      left: 3.2rem;
+      width: 80%;
+
+      & > h2 {
+        font-size: 4.8rem;
+      }
+    }
+  }
+}

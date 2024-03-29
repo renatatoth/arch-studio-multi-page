@@ -42,3 +42,9 @@ body {
 section {
   margin-bottom: 20rem;
 }
+
+@media (max-width: $mobile) {
+  section {
+    margin-bottom: 11rem;
+  }
+}

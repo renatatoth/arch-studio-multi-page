@@ -1,9 +1,50 @@
+@use '../../variables' as *;
+
 .featured {
   grid-column: 1 / -1;
   margin-bottom: 0;
+  display: grid;
+  grid-template-areas:
+          "title button"
+          "gallery gallery";
+  grid-template-rows: 13rem 1fr;
+  grid-template-columns: 1fr 1fr;
 
-  .wrapper {
-    display: flex;
-    justify-content: space-between;
+  .title {
+    grid-area: title;
+  }
+
+  .btnContainer {
+    grid-area: button;
+    justify-self: end;
+  }
+
+  .gallery {
+    grid-area: gallery;
+  }
+}
+
+@media (max-width: $mobile) {
+  .featured {
+    grid-template-areas:
+          "title"
+          "gallery"
+          "button";
+    grid-template-rows: 9.5rem 1fr 9.5rem;
+    grid-template-columns: 100vw;
+
+    .title {
+      padding: 0 3.2rem;
+    }
+
+    .btnContainer {
+      padding: 2.4rem 3.2rem 0;
+      justify-self: start;
+      width: 100%;
+
+      & > a {
+        width: 100%;
+      }
+    }
   }
 }

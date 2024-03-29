@@ -32,4 +32,14 @@
   line-height: 2.4rem;
 }
 
+@media (max-width: 375px) {
+  .textBlock {
+    display: block;
+    width: 100%;
+  }
+  .textBlock .title {
+    font-size: 4.8rem;
+  }
+}
+
 /*# sourceMappingURL=TextBlock.module.css.map */

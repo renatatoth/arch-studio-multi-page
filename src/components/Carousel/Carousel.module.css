@@ -8,17 +8,15 @@
   position: relative;
   transition: all 0.25s ease-in;
 }
-
-.imgContainer {
+.wrapper .imgContainer {
   overflow: hidden;
   filter: brightness(50%);
 }
-.imgContainer img {
+.wrapper .imgContainer img {
   display: block;
   width: 100%;
 }
-
-.textContainer {
+.wrapper .textContainer {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -31,28 +29,48 @@
   color: #FFF;
   transform: translateY(50%);
 }
-.textContainer h1 {
+.wrapper .textContainer h1 {
   font-size: 9.6rem;
   font-weight: 700;
   letter-spacing: -2px;
 }
-.textContainer p {
+.wrapper .textContainer p {
   font-size: 1.8rem;
   line-height: 2.4rem;
   width: 44rem;
 }
-
-@media (max-width: 768px) {
-  .textContainer {
-    left: 5.8rem;
-  }
-}
-.btnContainer {
+.wrapper .btnContainer {
   display: flex;
   position: absolute;
   bottom: 0;
   left: -8rem;
   z-index: 500;
+}
+
+@media (max-width: 768px) {
+  .wrapper .textContainer {
+    left: 5.8rem;
+  }
+}
+@media (max-width: 375px) {
+  .wrapper {
+    height: 56rem;
+  }
+  .wrapper .textContainer {
+    display: block;
+    left: 3.2rem;
+    height: auto;
+    top: -5rem;
+  }
+  .wrapper .textContainer h1 {
+    font-size: 5.4rem;
+    width: 70%;
+    margin-bottom: 1.1rem;
+  }
+  .wrapper .textContainer p {
+    margin-bottom: 8.3rem;
+    width: 31rem;
+  }
 }
 
 /*# sourceMappingURL=Carousel.module.css.map */

@@ -64,5 +64,10 @@
     right: 1rem;
   }
 }
+@media (max-width: 375px) {
+  .card .projectNumber {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=PortfolioCard.module.css.map */

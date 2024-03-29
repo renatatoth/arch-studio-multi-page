@@ -32,3 +32,14 @@
     line-height: 2.4rem;
   }
 }
+
+@media (max-width: $mobile) {
+  .textBlock {
+    display: block;
+    width: 100%;
+
+    .title {
+      font-size: 4.8rem;
+    }
+  }
+}

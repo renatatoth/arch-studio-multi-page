@@ -1,10 +1,43 @@
+/* FONTS */
+/* COLORS */
+/* VIEWPORTS */
+/* MIXINS */
 .featured {
   grid-column: 1/-1;
   margin-bottom: 0;
+  display: grid;
+  grid-template-areas: "title button" "gallery gallery";
+  grid-template-rows: 13rem 1fr;
+  grid-template-columns: 1fr 1fr;
 }
-.featured .wrapper {
-  display: flex;
-  justify-content: space-between;
+.featured .title {
+  grid-area: title;
+}
+.featured .btnContainer {
+  grid-area: button;
+  justify-self: end;
+}
+.featured .gallery {
+  grid-area: gallery;
+}
+
+@media (max-width: 375px) {
+  .featured {
+    grid-template-areas: "title" "gallery" "button";
+    grid-template-rows: 9.5rem 1fr 9.5rem;
+    grid-template-columns: 100vw;
+  }
+  .featured .title {
+    padding: 0 3.2rem;
+  }
+  .featured .btnContainer {
+    padding: 2.4rem 3.2rem 0;
+    justify-self: start;
+    width: 100%;
+  }
+  .featured .btnContainer > a {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=Featured.module.css.map */
