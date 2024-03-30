@@ -74,6 +74,11 @@
 
 @media (max-width: $mobile) {
   .card {
+    .textContainer {
+      left: 2.4rem;
+      bottom: 2.4rem;
+    }
+
     .projectNumber {
       display: none;
     }

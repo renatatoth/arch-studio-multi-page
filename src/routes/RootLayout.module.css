@@ -35,6 +35,15 @@
     grid-template-rows: 9.6rem 1fr 50rem;
     grid-template-columns: 100vw;
   }
+  .wrapper .modalOverlay {
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 1000;
+  }
   .wrapper .main {
     grid-column: 1/-1;
     display: block;

@@ -33,6 +33,11 @@
         }
       }
     }
+
+    .mobileMenu {
+      display: none;
+      cursor: pointer;
+    }
   }
 }
 
@@ -65,15 +70,43 @@
   .header {
     grid-column: 1 / -1;
     padding: 3.2rem;
+    background-color: #FFF;
+    position: relative;
+    z-index: 1001;
 
     .nav {
+      justify-content: space-between;
+
       .logoContainer {
         width: 7.7rem;
       }
 
       .navList {
-        display: none;
+        position: absolute;
+        top: 9.6rem;
+        right: 0;
+        background-color: $very-light-grey;
+        height: 23.5rem;
+        width: 34.3rem;
+        padding: 3.9rem 4.8rem 0;
+        flex-direction: column;
+        z-index: 500;
+
+        .navItem {
+          color: $very-dark-blue;
+          font-size: 3.2rem;
+          line-height: 4rem;
+          margin-bottom: 1.7rem;
+        }
+      }
+
+      .mobileMenu {
+        display: block;
       }
     }
+  }
+
+  .active::after {
+    display: none;
   }
 }

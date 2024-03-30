@@ -65,6 +65,10 @@
   }
 }
 @media (max-width: 375px) {
+  .card .textContainer {
+    left: 2.4rem;
+    bottom: 2.4rem;
+  }
   .card .projectNumber {
     display: none;
   }

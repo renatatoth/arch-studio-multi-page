@@ -32,6 +32,10 @@
 .header .nav .navList .navItem:hover {
   color: #1B1D23;
 }
+.header .nav .mobileMenu {
+  display: none;
+  cursor: pointer;
+}
 
 .active {
   color: #1B1D23;
@@ -56,11 +60,38 @@
   .header {
     grid-column: 1/-1;
     padding: 3.2rem;
+    background-color: #FFF;
+    position: relative;
+    z-index: 1001;
+  }
+  .header .nav {
+    justify-content: space-between;
   }
   .header .nav .logoContainer {
     width: 7.7rem;
   }
   .header .nav .navList {
+    position: absolute;
+    top: 9.6rem;
+    right: 0;
+    background-color: #EEEFF4;
+    height: 23.5rem;
+    width: 34.3rem;
+    padding: 3.9rem 4.8rem 0;
+    flex-direction: column;
+    z-index: 500;
+  }
+  .header .nav .navList .navItem {
+    color: #1B1D23;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin-bottom: 1.7rem;
+  }
+  .header .nav .mobileMenu {
+    display: block;
+  }
+
+  .active::after {
     display: none;
   }
 }
