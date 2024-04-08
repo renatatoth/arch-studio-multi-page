@@ -8,7 +8,7 @@ const TextBlockWithImg = ({title, image, children}) => {
     return (
         <section className={classes.wrapper}>
             <div className={classes.textContainer}>
-                <TextBlock title={title} hasLine={true}>{children}</TextBlock>
+                <TextBlock title={title} hasDivider={true}>{children}</TextBlock>
             </div>
             <div className={classes.imgContainer}>
                 <img src={require(`../../assets/${imgFolder}/desktop/${imgUrl}`)} alt={title}/>

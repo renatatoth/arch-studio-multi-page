@@ -28,5 +28,11 @@
       margin-bottom: 4.3rem;
     }
   }
-  
+}
+
+@media (max-width: $mobile) {
+  .card {
+    display: block;
+    margin-bottom: 4rem;
+  }
 }

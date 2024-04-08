@@ -53,6 +53,19 @@
   }
 }
 @media (max-width: 375px) {
+  .wrapper {
+    position: relative;
+  }
+  .wrapper:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 3.2rem;
+    height: 1px;
+    width: 6.5rem;
+    background-color: #C8CCD8;
+  }
   .wrapper .textContainer h2 {
     padding-top: 7rem;
   }

@@ -114,5 +114,15 @@
     grid-column: 1/-1;
   }
 }
+@media (max-width: 375px) {
+  .wrapper {
+    display: block;
+    margin-bottom: 0;
+  }
+  .wrapper .title {
+    width: 80%;
+    margin-bottom: 5rem;
+  }
+}
 
 /*# sourceMappingURL=ContactForm.module.css.map */

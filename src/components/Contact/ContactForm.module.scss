@@ -127,3 +127,15 @@
   }
 }
 
+@media (max-width: $mobile) {
+  .wrapper {
+    display: block;
+    margin-bottom: 0;
+
+    .title {
+      width: 80%;
+      margin-bottom: 5rem;
+    }
+  }
+}
+

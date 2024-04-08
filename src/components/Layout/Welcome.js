@@ -11,7 +11,7 @@ const Welcome = ({title, subTitle, description, image}) => {
             </div>
             <div className={classes.textContainer}>
                 <h1 className={classes.title}>{title}</h1>
-                <TextBlock title={subTitle} hasLine={false}>{description}</TextBlock>
+                <TextBlock title={subTitle} hasDivider={false}>{description}</TextBlock>
             </div>
         </section>
     );

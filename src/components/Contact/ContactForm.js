@@ -13,7 +13,7 @@ const ContactForm = () => {
         reset
     } = useForm();
 
-    const onSubmit = async (data) => {
+    const onSubmit = async () => {
         await new Promise((resolve) => setTimeout(resolve, 1000));
 
         if (isValid) {
@@ -25,7 +25,7 @@ const ContactForm = () => {
     return (
         <section className={classes.wrapper}>
             <div className={classes.title}>
-                <TextBlock title="Connect with us" hasLine={false}/>
+                <TextBlock title="Connect with us" hasDivider={false}/>
             </div>
             <form onSubmit={handleSubmit(onSubmit)} className={classes.form}>
                 <div className={classes.formGroup}>

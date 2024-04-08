@@ -15,7 +15,7 @@ const Hero = ({title, subTitle, description, bgImage}) => {
             </div>
             <div className={classes.textContainer}>
                 <h1 className={classes.title}>{title}</h1>
-                <TextBlock title={subTitle} hasLine>{description}</TextBlock>
+                <TextBlock title={subTitle} hasDivider>{description}</TextBlock>
             </div>
         </section>
     );

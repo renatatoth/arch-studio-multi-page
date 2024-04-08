@@ -29,6 +29,25 @@
       grid-column: 1 / -1;
     }
   }
+}
 
+@media (max-width: $mobile) {
+  .wrapper {
+    display: block;
+    margin-bottom: 7rem;
+
+    .title {
+      height: auto;
+      margin-bottom: 4rem;
+
+      & h2 {
+        padding-top: 7rem;
+      }
+    }
+
+    .contacts {
+      display: block;
+    }
+  }
 }
 

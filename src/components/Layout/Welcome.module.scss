@@ -50,11 +50,21 @@
 
 @media (max-width: $mobile) {
   .wrapper {
+    position: relative;
 
-    .textContainer {
-      & h2 {
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 3.2rem;
+      height: 1px;
+      width: 6.5rem;
+      background-color: $light-grey;
+    }
+
+    .textContainer h2 {
         padding-top: 7rem ;
-      }
     }
 
     .title {

@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../variables.scss","ContactCard.module.scss"],"names":[],"mappings":"AAAA;AAGA;AAQA;AAIA;ACbA;EACE;EACA;EACA;;AAEA;EACE;EACA;EACA;;AAGF;EACE;EACA;;;AAIJ;EACE;IACE;IACA;IACA;IACA;;EAEA;IACE","file":"ContactCard.module.css"}
+{"version":3,"sourceRoot":"","sources":["../../variables.scss","ContactCard.module.scss"],"names":[],"mappings":"AAAA;AAGA;AAQA;AAIA;ACbA;EACE;EACA;EACA;;AAEA;EACE;EACA;EACA;;AAGF;EACE;EACA;;;AAIJ;EACE;IACE;IACA;IACA;IACA;;EAEA;IACE;;;AAKN;EACE;IACE;IACA","file":"ContactCard.module.css"}

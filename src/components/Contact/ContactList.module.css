@@ -36,5 +36,21 @@
     grid-column: 1/-1;
   }
 }
+@media (max-width: 375px) {
+  .wrapper {
+    display: block;
+    margin-bottom: 7rem;
+  }
+  .wrapper .title {
+    height: auto;
+    margin-bottom: 4rem;
+  }
+  .wrapper .title h2 {
+    padding-top: 7rem;
+  }
+  .wrapper .contacts {
+    display: block;
+  }
+}
 
 /*# sourceMappingURL=ContactList.module.css.map */
