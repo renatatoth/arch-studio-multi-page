@@ -34,5 +34,16 @@
     gap: 1rem;
   }
 }
+@media (max-width: 375px) {
+  .wrapper {
+    display: block;
+  }
+  .wrapper .title {
+    margin-bottom: 5.5rem;
+  }
+  .wrapper .leadersContainer {
+    display: block;
+  }
+}
 
 /*# sourceMappingURL=Leaders.module.css.map */

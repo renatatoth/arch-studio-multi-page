@@ -30,3 +30,17 @@
     }
   }
 }
+
+@media (max-width: $mobile) {
+  .wrapper {
+    display: block;
+
+    .textContainer {
+      height: auto;
+
+      & h2 {
+        padding-top: 7rem;
+      }
+    }
+  }
+}

@@ -26,12 +26,17 @@
     grid-template-areas: "title" "gallery" "button";
     grid-template-rows: 9.5rem 1fr 9.5rem;
     grid-template-columns: 100vw;
+    padding: 0;
   }
   .featured .title {
     padding: 0 3.2rem;
+    margin-bottom: 0;
+  }
+  .featured .gallery {
+    margin-top: -5.7rem;
   }
   .featured .btnContainer {
-    padding: 2.4rem 3.2rem 0;
+    padding: 0 3.2rem;
     justify-self: start;
     width: 100%;
   }

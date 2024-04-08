@@ -36,5 +36,16 @@
     display: none;
   }
 }
+@media (max-width: 375px) {
+  .wrapper {
+    display: block;
+  }
+  .wrapper .textContainer {
+    height: auto;
+  }
+  .wrapper .textContainer h2 {
+    padding-top: 7rem;
+  }
+}
 
 /*# sourceMappingURL=TextBlockWithImg.module.css.map */

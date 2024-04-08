@@ -53,8 +53,8 @@
   }
 }
 @media (max-width: 375px) {
-  .wrapper {
-    padding: 0 3.2rem;
+  .wrapper .textContainer h2 {
+    padding-top: 7rem;
   }
   .wrapper .title {
     display: none;

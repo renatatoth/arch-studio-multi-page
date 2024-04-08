@@ -55,6 +55,7 @@
 @media (max-width: 375px) {
   .wrapper {
     height: 56rem;
+    padding: 0;
   }
   .wrapper .textContainer {
     display: block;

@@ -51,5 +51,12 @@
     margin-bottom: 10rem;
   }
 }
+@media (max-width: 375px) {
+  .card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8rem;
+  }
+}
 
 /*# sourceMappingURL=LeaderCard.module.css.map */

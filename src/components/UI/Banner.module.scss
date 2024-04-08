@@ -36,6 +36,8 @@
 
 @media (max-width: $mobile) {
   .banner {
+    padding: 0;
+
     .textContainer {
       left: 3.2rem;
       width: 80%;

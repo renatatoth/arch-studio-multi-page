@@ -31,6 +31,9 @@
   }
 }
 @media (max-width: 375px) {
+  .banner {
+    padding: 0;
+  }
   .banner .textContainer {
     left: 3.2rem;
     width: 80%;

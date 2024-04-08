@@ -56,3 +56,12 @@
     margin-bottom: 10rem;
   }
 }
+
+@media (max-width: $mobile) {
+  .card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8rem;
+  }
+  
+}

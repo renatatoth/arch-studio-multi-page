@@ -50,11 +50,15 @@
 
 @media (max-width: $mobile) {
   .wrapper {
-    padding: 0 3.2rem;
+
+    .textContainer {
+      & h2 {
+        padding-top: 7rem ;
+      }
+    }
 
     .title {
       display: none;
     }
   }
-  
 }

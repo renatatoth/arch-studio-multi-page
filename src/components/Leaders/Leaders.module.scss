@@ -29,3 +29,16 @@
   }
 }
 
+@media (max-width: $mobile) {
+  .wrapper {
+    display: block;
+
+    .title {
+      margin-bottom: 5.5rem;
+    }
+
+    .leadersContainer {
+      display: block;
+    }
+  }
+}

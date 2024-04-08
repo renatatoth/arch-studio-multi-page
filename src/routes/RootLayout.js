@@ -26,8 +26,8 @@ const RootLayout = () => {
 
     return (
         <div className={classes.wrapper}>
-            {menuVisible && <div className={classes.modalOverlay}></div>}
             <Header menuVisible={menuVisible} onToggleMenu={handleMenuToggle} onCloseMenu={handleMenuClose} />
+            {menuVisible && <div className={classes.modalOverlay}></div>}
             <main className={classes.main}>
                 <ScrollToTop/>
                 <Outlet/>

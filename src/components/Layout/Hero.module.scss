@@ -55,3 +55,28 @@
   }
 }
 
+@media (max-width: $mobile) {
+  .wrapper {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    .title {
+      display: none;
+    }
+
+    .textContainer {
+      padding-left: 3.2rem;
+      padding-top: 7rem;
+      top: -4.5rem;
+      width: 34.3rem;
+      height: auto;
+      margin-bottom: 3.1rem;
+
+      & span {
+        display: none;
+      }
+    }
+  }
+}
+
