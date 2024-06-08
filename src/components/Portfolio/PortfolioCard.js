@@ -6,8 +6,8 @@ const PortfolioCard = ({projectData, showNumber}) => {
             <div className={classes.overlay}></div>
             <div className={classes.imgContainer}>
                 <picture>
-                    <source media="(max-width: 375px)" srcSet={require(`../../assets/portfolio/mobile/${projectData.imgUrl}`)}/>
-                    <source media="(max-width: 768px)" srcSet={require(`../../assets/portfolio/tablet/${projectData.imgUrl}`)}/>
+                    <source media="(max-width: 414px)" srcSet={require(`../../assets/portfolio/mobile/${projectData.imgUrl}`)}/>
+                    <source media="(max-width: 916px)" srcSet={require(`../../assets/portfolio/tablet/${projectData.imgUrl}`)}/>
                     <img src={require(`../../assets/portfolio/desktop/${projectData.imgUrl}`)} alt={projectData.title}/>
                 </picture>
             </div>

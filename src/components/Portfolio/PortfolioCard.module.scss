@@ -23,10 +23,7 @@
   .imgContainer {
     height: 100%;
     width: 100%;
-    & img {
-      height: 100%;
-      width: 100%;
-    }
+    @include cover-image();
   }
 
   .textContainer {
@@ -63,7 +60,7 @@
 
 @media (max-width: $tablet) {
   .card {
-      grid-column: 1 / -1;
+    grid-column: 1 / -1;
 
     .projectNumber {
       right: 1rem;
@@ -71,9 +68,9 @@
   }
 }
 
-
 @media (max-width: $mobile) {
   .card {
+
     .textContainer {
       left: 2.4rem;
       bottom: 2.4rem;

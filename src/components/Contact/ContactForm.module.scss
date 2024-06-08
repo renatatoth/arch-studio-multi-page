@@ -2,7 +2,7 @@
 
 .wrapper {
   grid-column: 1 / -1;
-  @include grid-12-col();
+  @include inner-grid();
 
   .title {
     grid-column: 1 / 4;
@@ -48,7 +48,7 @@
       &:-webkit-autofill,
       &:-webkit-autofill:hover,
       &:-webkit-autofill:focus,
-      &:-webkit-autofill:active{
+      &:-webkit-autofill:active {
         -webkit-box-shadow: 0 0 0 30px #FFF inset !important;
       }
     }

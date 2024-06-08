@@ -1,7 +1,7 @@
 @use '../../variables' as *;
 
 .wrapper {
-  @include grid-12-col();
+  @include inner-grid();
   grid-column: 1 / -1;
   grid-template-rows: 1fr;
   align-items: end;
@@ -29,12 +29,31 @@
   }
 }
 
+@media (max-width: $desktop-small) {
+  .wrapper {
+    .textContainer {
+      grid-column: 2 / 8;
+      margin-top: 8rem;
+    }
+
+    .imgContainer {
+      grid-column: 9 / -1;
+      @include cover-image();
+    }
+
+    .title {
+      font-size: 20rem;
+    }
+  }
+}
+
 @media (max-width: $tablet) {
   .wrapper {
     margin-top: 7rem;
 
     .textContainer {
       grid-column: 1 / -1;
+      margin-top: 0;
     }
 
     .imgContainer {
@@ -44,6 +63,14 @@
     .title {
       font-size: 15.7rem;
       top: -16rem;
+    }
+  }
+}
+
+@media (max-width: $tablet-small) {
+  .wrapper {
+    .title {
+      font-size: 12rem;
     }
   }
 }
@@ -64,7 +91,7 @@
     }
 
     .textContainer h2 {
-        padding-top: 7rem ;
+      padding-top: 7rem;
     }
 
     .title {

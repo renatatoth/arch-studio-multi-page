@@ -3,10 +3,10 @@
 .banner {
   grid-column: 1 / -1;
   position: relative;
-  height: 56rem;
 
   .imgContainer {
     filter: brightness(50%);
+    @include cover-image();
   }
 
   .textContainer {
@@ -26,6 +26,14 @@
   }
 }
 
+@media (max-width: $desktop-small) {
+  .banner {
+    .textContainer {
+      left: 12rem;
+    }
+  }
+}
+
 @media (max-width: $tablet) {
   .banner {
     .textContainer {
@@ -34,9 +42,23 @@
   }
 }
 
+@media (max-width: $tablet-small) {
+  .banner {
+    .textContainer {
+      left: 4rem;
+      width: 30rem;
+
+      & > h2 {
+        font-size: 5.4rem;
+      }
+    }
+  }
+}
+
 @media (max-width: $mobile) {
   .banner {
     padding: 0;
+    height: 56rem;
 
     .textContainer {
       left: 3.2rem;

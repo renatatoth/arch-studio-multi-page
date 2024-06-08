@@ -17,7 +17,12 @@
   margin-bottom: 5.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
+  .card {
+    width: auto;
+  }
+}
+@media (max-width: 916px) {
   .card {
     width: 100%;
     display: flex;
@@ -28,10 +33,18 @@
     margin-bottom: 4.3rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 648px) {
+  .card .details {
+    margin-right: 5rem;
+  }
+}
+@media (max-width: 414px) {
   .card {
     display: block;
     margin-bottom: 4rem;
+  }
+  .card .details {
+    margin-right: 0;
   }
 }
 

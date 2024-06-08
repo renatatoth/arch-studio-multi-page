@@ -12,7 +12,7 @@ const RootLayout = () => {
 
     useEffect(() => {
         // show or hide menu when resizing window
-        if (viewportWidth <= 375) setMenuVisible(false);
+        if (viewportWidth <= 414) setMenuVisible(false);
         else setMenuVisible(true);
     }, [viewportWidth]);
 
@@ -21,12 +21,12 @@ const RootLayout = () => {
     };
 
     const handleMenuClose = () => {
-        if (viewportWidth <= 375) setMenuVisible(false);
+        if (viewportWidth <= 414) setMenuVisible(false);
     };
 
     return (
         <div className={classes.wrapper}>
-            <Header menuVisible={menuVisible} onToggleMenu={handleMenuToggle} onCloseMenu={handleMenuClose} />
+            <Header menuVisible={menuVisible} onToggleMenu={handleMenuToggle} onCloseMenu={handleMenuClose}/>
             {menuVisible && <div className={classes.modalOverlay}></div>}
             <main className={classes.main}>
                 <ScrollToTop/>

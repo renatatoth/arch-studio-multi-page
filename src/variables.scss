@@ -10,18 +10,30 @@ $very-light-grey: #EEEFF4;
 $red: #DF5656;
 
 /* VIEWPORTS */
-$tablet: 768px;
-$mobile: 375px;
+$desktop-small: 1280px;
+$tablet: 916px;
+$tablet-small: 648px;
+$mobile: 414px;
 
 /* MIXINS */
-@mixin grid-12-col {
+@mixin inner-grid {
   max-width: 111rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
+  grid-template-columns: repeat(12, minmax(6.5rem, 1fr));
   column-gap: 3rem;
-  
+
+  @media (max-width: $desktop-small) {
+    grid-template-columns: repeat(12, minmax(3.5rem, 1fr));
+    column-gap: 2.5rem;
+  }
+
   @media (max-width: $tablet) {
-    grid-template-columns: repeat(auto-fill, minmax(4.8rem, 1fr));
+    grid-template-columns: repeat(6, minmax(3.5rem, 1fr));
+    column-gap: 1rem;
+  }
+
+  @media (max-width: $tablet-small) {
+    grid-template-columns: repeat(6, minmax(2rem, 1fr));
     column-gap: 1rem;
   }
 }
@@ -32,4 +44,12 @@ $mobile: 375px;
 
 @mixin white-svg {
   filter: brightness(0) invert(1);
+}
+
+@mixin cover-image {
+  picture, img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 }

@@ -33,6 +33,21 @@
   }
 }
 
+@media (max-width: $tablet) {
+  .textBlock {
+    .title {font-size: 6.2rem;
+    }
+  }
+}
+
+@media (max-width: $tablet-small) {
+  .textBlock {
+    .title {
+      font-size: 5.2rem;
+    }
+  }
+}
+
 @media (max-width: $mobile) {
   .textBlock {
     display: block;

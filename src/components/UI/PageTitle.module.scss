@@ -24,15 +24,21 @@
   }
 }
 
+@media (max-width: $desktop-small) {
+  .pageTitle {
+    left: -6rem;
+  }
+}
+
 @media (max-width: $tablet) {
   .pageTitle {
     left: -4rem;
   }
 }
 
-@media (max-width: $mobile) {
+@media (max-width: $tablet-small) {
   .pageTitle {
     display: none;
   }
-  
+
 }

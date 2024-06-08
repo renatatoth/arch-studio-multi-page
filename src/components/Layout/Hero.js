@@ -8,8 +8,8 @@ const Hero = ({title, subTitle, description, bgImage}) => {
         <section className={classes.wrapper}>
             <div className={classes.imgContainer}>
                 <picture>
-                    <source media="(max-width: 375px)" srcSet={require(`../../assets/${bgImgFolder}/mobile/${bgImgUrl}`)}/>
-                    <source media="(max-width: 768px)" srcSet={require(`../../assets/${bgImgFolder}/tablet/${bgImgUrl}`)}/>
+                    <source media="(max-width: 414px)" srcSet={require(`../../assets/${bgImgFolder}/mobile/${bgImgUrl}`)}/>
+                    <source media="(max-width: 916px)" srcSet={require(`../../assets/${bgImgFolder}/tablet/${bgImgUrl}`)}/>
                     <img src={require(`../../assets/${bgImgFolder}/desktop/${bgImgUrl}`)} alt={title}/>
                 </picture>
             </div>

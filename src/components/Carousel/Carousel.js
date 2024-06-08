@@ -11,7 +11,7 @@ const Carousel = ({data}) => {
     const viewportWidth = useWindowWidth();
 
     useEffect(() => {
-        if (viewportWidth > 768) {
+        if (viewportWidth > 916) {
             // play carousel only on desktop viewport
             if (timerRef.current) {
                 clearTimeout(timerRef.current);
@@ -37,19 +37,19 @@ const Carousel = ({data}) => {
         <section className={classes.wrapper}>
             <div className={classes.imgContainer}>
                 <picture>
-                    <source media="(max-width: 375px)" srcSet={require(`../../assets/home/mobile/${data[currSlide].imgUrl}`)}/>
-                    <source media="(max-width: 768px)" srcSet={require(`../../assets/home/tablet/${data[currSlide].imgUrl}`)}/>
+                    <source media="(max-width: 414px)" srcSet={require(`../../assets/home/mobile/${data[currSlide].imgUrl}`)}/>
+                    <source media="(max-width: 916px)" srcSet={require(`../../assets/home/tablet/${data[currSlide].imgUrl}`)}/>
                     <img src={require(`../../assets/home/desktop/${data[currSlide].imgUrl}`)} alt={data[currSlide].title}/>
                 </picture>
             </div>
             <div className={classes.textContainer}>
                 <div>
-                <h1>{data[currSlide].title}</h1>
+                    <h1>{data[currSlide].title}</h1>
                     <p>{data[currSlide].description}</p>
                 </div>
                 <Button to="portfolio">See Our Portfolio</Button>
             </div>
-            {viewportWidth > 768 &&
+            {viewportWidth > 916 &&
                 <div className={classes.btnContainer}>
                     {data.map(e => <CarouselButton key={e.id} btnNumber={e.id} currSlide={currSlide} onSelectSlide={selectSlideHandler}/>)}
                 </div>}

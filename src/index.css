@@ -19,7 +19,6 @@ button, input, textarea, select {
 
 img, picture, svg, canvas {
   display: block;
-  max-inline-size: 100%;
   block-size: auto;
 }
 
@@ -45,7 +44,7 @@ section {
   margin-bottom: 20rem;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   section {
     padding: 0 3.2rem;
     margin-bottom: 11rem;

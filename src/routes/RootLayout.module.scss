@@ -2,28 +2,37 @@
 
 .wrapper {
   display: grid;
-  grid-template-rows: 15.2rem 1fr 20rem;
-  grid-template-columns: 11.4% minmax(57rem, 111rem) 11.4%;
+  grid-template-rows: 15.2rem 1fr auto;
+  grid-template-columns: 1fr minmax(57rem, 111rem) 1fr;
 
   .main {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-    @include grid-12-col();
-    grid-template-rows: auto;
     position: relative;
+  }
+}
+
+@media (max-width: $desktop-small) {
+  .wrapper {
+    grid-template-columns: 10% minmax(57rem, 111rem) 10%;
   }
 }
 
 @media (max-width: $tablet) {
   .wrapper {
-    grid-template-rows: 15.2rem 1fr 12rem;
-    grid-template-columns: 12.6% minmax(37rem, 57rem) 12.6%;
+    grid-template-columns: 12.7% minmax(37rem, 1fr) 12.7%;
+  }
+}
+
+@media (max-width: $tablet-small) {
+  .wrapper {
+    grid-template-columns: 8% minmax(37rem, 68rem) 8%;
   }
 }
 
 @media (max-width: $mobile) {
   .wrapper {
-    grid-template-rows: 9.6rem 1fr 50rem;
+    grid-template-rows: 9.6rem 1fr auto;
     grid-template-columns: 100vw;
 
     .modalOverlay {

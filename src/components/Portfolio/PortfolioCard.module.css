@@ -24,9 +24,10 @@
   height: 100%;
   width: 100%;
 }
-.card .imgContainer img {
+.card .imgContainer picture, .card .imgContainer img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .card .textContainer {
   position: absolute;
@@ -56,7 +57,7 @@
   opacity: 0.5;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 916px) {
   .card {
     grid-column: 1/-1;
   }
@@ -64,7 +65,7 @@
     right: 1rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .card .textContainer {
     left: 2.4rem;
     bottom: 2.4rem;

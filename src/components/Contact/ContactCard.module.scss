@@ -17,6 +17,12 @@
   }
 }
 
+@media (max-width: $desktop-small) {
+  .card {
+    width: auto;
+  }
+}
+
 @media (max-width: $tablet) {
   .card {
     width: 100%;
@@ -30,9 +36,22 @@
   }
 }
 
+@media (max-width: $tablet-small) {
+  .card {
+    .details {
+      margin-right: 5rem;
+    }
+  }
+
+}
+
 @media (max-width: $mobile) {
   .card {
     display: block;
     margin-bottom: 4rem;
+
+    .details {
+      margin-right: 0;
+    }
   }
 }

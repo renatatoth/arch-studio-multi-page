@@ -2,7 +2,7 @@
 
 .wrapper {
   grid-column: 1 / -1;
-  @include grid-12-col();
+  @include inner-grid();
 
   .title {
     grid-column: 1 / 4;
@@ -15,6 +15,15 @@
     flex-wrap: wrap;
     gap: 3rem;
     align-items: flex-end;
+  }
+}
+
+@media (max-width: $desktop-small) {
+  .wrapper {
+    .contacts {
+      gap: 2rem;
+      justify-content: space-between;
+    }
   }
 }
 

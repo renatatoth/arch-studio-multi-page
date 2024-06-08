@@ -51,12 +51,25 @@
   transform: translate(50%, -50%);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 916px) {
   .header .nav .logoContainer {
     margin-right: 7.8rem;
   }
+  .header .nav .navList .navItem {
+    line-height: 1.5;
+    margin-right: 3.5rem;
+  }
 }
-@media (max-width: 375px) {
+@media (max-width: 648px) {
+  .header .nav .logoContainer {
+    width: 7rem;
+    margin-right: 5.5rem;
+  }
+  .header .nav .navList .navItem {
+    text-align: center;
+  }
+}
+@media (max-width: 414px) {
   .header {
     grid-column: 1/-1;
     padding: 3.2rem;
@@ -72,7 +85,7 @@
   }
   .header .nav .navList {
     position: absolute;
-    top: 9.6rem;
+    top: 10.4rem;
     right: 0;
     background-color: #EEEFF4;
     height: 23.5rem;
@@ -86,6 +99,7 @@
     font-size: 3.2rem;
     line-height: 4rem;
     margin-bottom: 1.7rem;
+    text-align: left;
   }
   .header .nav .mobileMenu {
     display: block;

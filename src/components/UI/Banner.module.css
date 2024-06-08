@@ -5,10 +5,14 @@
 .banner {
   grid-column: 1/-1;
   position: relative;
-  height: 56rem;
 }
 .banner .imgContainer {
   filter: brightness(50%);
+}
+.banner .imgContainer picture, .banner .imgContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .banner .textContainer {
   position: absolute;
@@ -25,14 +29,29 @@
   margin-bottom: 2.7rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
+  .banner .textContainer {
+    left: 12rem;
+  }
+}
+@media (max-width: 916px) {
   .banner .textContainer {
     left: 5.8rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 648px) {
+  .banner .textContainer {
+    left: 4rem;
+    width: 30rem;
+  }
+  .banner .textContainer > h2 {
+    font-size: 5.4rem;
+  }
+}
+@media (max-width: 414px) {
   .banner {
     padding: 0;
+    height: 56rem;
   }
   .banner .textContainer {
     left: 3.2rem;

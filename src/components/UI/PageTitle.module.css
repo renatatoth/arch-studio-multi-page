@@ -25,12 +25,17 @@
   background-color: #C8CCD8;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
+  .pageTitle {
+    left: -6rem;
+  }
+}
+@media (max-width: 916px) {
   .pageTitle {
     left: -4rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 648px) {
   .pageTitle {
     display: none;
   }

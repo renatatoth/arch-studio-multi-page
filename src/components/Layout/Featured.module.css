@@ -21,7 +21,7 @@
   grid-area: gallery;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .featured {
     grid-template-areas: "title" "gallery" "button";
     grid-template-rows: 9.5rem 1fr 9.5rem;

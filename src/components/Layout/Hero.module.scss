@@ -1,7 +1,7 @@
 @use '../../variables' as *;
 
 .wrapper {
-  @include grid-12-col();
+  @include inner-grid();
   grid-column: 1 / -1;
   grid-template-rows: 1fr;
   align-items: end;
@@ -40,17 +40,34 @@
   }
 }
 
+@media (max-width: $desktop-small) {
+  .wrapper {
+    .textContainer {
+      padding-left: 9rem;
+    }
+  }
+}
+
 @media (max-width: $tablet) {
   .wrapper {
-    .title {
-      font-size: 16rem;
-    }
-
     .textContainer {
       grid-column: 2 / -1;
       height: 43rem;
       padding-left: 6rem;
       padding-top: 8.8rem;
+    }
+
+    .title {
+      font-size: 18rem;
+      top: -9.5rem;
+    }
+  }
+}
+
+@media (max-width: $tablet-small) {
+  .wrapper {
+    .title {
+      font-size: 14rem;
     }
   }
 }
@@ -76,6 +93,10 @@
       & span {
         display: none;
       }
+    }
+
+    .imgContainer {
+      @include cover-image();
     }
   }
 }

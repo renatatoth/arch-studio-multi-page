@@ -8,8 +8,8 @@ const Banner = ({title, bgImage, btnText, btnLink}) => {
         <section className={classes.banner}>
             <div className={classes.imgContainer}>
                 <picture>
-                    <source media="(max-width: 375px)" srcSet={require(`../../assets/${bgImgFolder}/mobile/${bgImgUrl}`)}/>
-                    <source media="(max-width: 768px)" srcSet={require(`../../assets/${bgImgFolder}/tablet/${bgImgUrl}`)}/>
+                    <source media="(max-width: 414px)" srcSet={require(`../../assets/${bgImgFolder}/mobile/${bgImgUrl}`)}/>
+                    <source media="(max-width: 916px)" srcSet={require(`../../assets/${bgImgFolder}/tablet/${bgImgUrl}`)}/>
                     <img src={require(`../../assets/${bgImgFolder}/desktop/${bgImgUrl}`)} alt={title}/>
                 </picture>
             </div>

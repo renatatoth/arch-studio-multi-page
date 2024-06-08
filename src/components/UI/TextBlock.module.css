@@ -32,7 +32,17 @@
   line-height: 2.4rem;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 916px) {
+  .textBlock .title {
+    font-size: 6.2rem;
+  }
+}
+@media (max-width: 648px) {
+  .textBlock .title {
+    font-size: 5.2rem;
+  }
+}
+@media (max-width: 414px) {
   .textBlock {
     display: block;
     width: 100%;

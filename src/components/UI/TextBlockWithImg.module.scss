@@ -2,7 +2,7 @@
 
 .wrapper {
   grid-column: 1 / -1;
-  @include grid-12-col();
+  @include inner-grid();
   grid-template-rows: 1fr;
   align-items: end;
 
@@ -15,6 +15,15 @@
   .imgContainer {
     grid-column: 7 / -1;
     grid-row: 1;
+    @include cover-image();
+  }
+}
+
+@media (max-width: $desktop-small) {
+  .wrapper {
+    .imgContainer {
+      height: 100%;
+    }
   }
 }
 

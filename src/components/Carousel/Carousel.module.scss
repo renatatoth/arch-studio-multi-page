@@ -2,18 +2,12 @@
 
 .wrapper {
   grid-column: 1 / -1;
-  height: 72rem;
   position: relative;
   @include smooth-transition();
 
   .imgContainer {
-    overflow: hidden;
     filter: brightness(50%);
-
-    & img {
-      display: block;
-      width: 100%;
-    }
+    @include cover-image();
   }
 
   .textContainer {
@@ -24,8 +18,8 @@
     z-index: 200;
     top: 0;
     left: 19rem;
-    max-width: 54.4rem;
     height: 35.5rem;
+    max-width: 54.4rem;
     color: #FFF;
     transform: translateY(50%);
 
@@ -33,12 +27,14 @@
       font-size: 9.6rem;
       font-weight: 700;
       letter-spacing: -2px;
+      margin-bottom: 1rem;
     }
 
     p {
       font-size: 1.8rem;
       line-height: 2.4rem;
-      width: 44rem;
+      max-width: 44rem;
+      margin-bottom: 4.1rem;
     }
   }
 
@@ -49,27 +45,65 @@
     left: -8rem;
     z-index: 500;
   }
+}
 
+@media (max-width: $desktop-small) {
+  .wrapper {
+    .textContainer {
+      height: 25rem;
+      top: -6rem;
+      left: 10rem;
+
+      h1 {
+        font-size: 8.2rem;
+      }
+
+      p {
+        max-width: 55rem;
+      }
+    }
+  }
 }
 
 @media (max-width: $tablet) {
   .wrapper {
     .textContainer {
       left: 5.8rem;
+      right: 5.8rem;
+      top: 0;
+
+      p {
+        width: 40rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet-small) {
+  .wrapper {
+    .textContainer {
+      left: 4rem;
+
+      h1 {
+        font-size: 7rem;
+      }
+
+      p {
+        width: 30rem;
+      }
     }
   }
 }
 
 @media (max-width: $mobile) {
   .wrapper {
-    height: 56rem;
     padding: 0;
 
     .textContainer {
       display: block;
       left: 3.2rem;
-      height: auto;
-      top: -5rem;
+      top: -6rem;
+      right: 3.2rem;
 
       h1 {
         font-size: 5.4rem;
@@ -78,8 +112,8 @@
       }
 
       p {
-        margin-bottom: 8.3rem;
-        width: 31rem;
+        margin-bottom: 6.5rem;
+        width: auto;
       }
     }
   }

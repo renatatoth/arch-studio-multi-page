@@ -8,8 +8,8 @@ const Map = () => {
     return (
         <section className={classes.map}>
             <picture>
-                <source media="(max-width: 375px)" srcSet={mapImageMobile}/>
-                <source media="(max-width: 768px)" srcSet={mapImageTablet}/>
+                <source media="(max-width: 414px)" srcSet={mapImageMobile}/>
+                <source media="(max-width: 916px)" srcSet={mapImageTablet}/>
                 <img src={mapImage} alt="Map"/>
             </picture>
         </section>
